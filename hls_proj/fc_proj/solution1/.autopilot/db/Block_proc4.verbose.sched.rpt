@@ -1,0 +1,215 @@
+
+
+================================================================
+== Vivado HLS Report for 'Block_proc4'
+================================================================
+* Date:           Sat Mar 13 01:17:00 2021
+
+* Version:        2017.2 (Build 1909853 on Thu Jun 15 18:55:24 MDT 2017)
+* Project:        fc_proj
+* Solution:       solution1
+* Product family: virtexu
+* Target device:  xcvu095-ffvc1517-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   4.00|      3.33|        0.50|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    2|    2|    2|    2|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 3
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+* FSM state operations: 
+
+ <State 1>: 3.33ns
+ST_1: batch_size_read (11)  [1/1] 0.00ns
+entry:1  %batch_size_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %batch_size)
+
+ST_1: num_inputs_read (15)  [1/1] 0.00ns
+entry:5  %num_inputs_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %num_inputs)
+
+ST_1: num_outputs_read (16)  [1/1] 0.00ns
+entry:6  %num_outputs_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %num_outputs)
+
+ST_1: StgValue_7 (17)  [1/1] 0.71ns
+entry:7  call void @_ssdm_op_Write.ap_fifo.i32P(i32* %num_outputs_out, i32 %num_outputs_read)
+
+ST_1: StgValue_8 (19)  [1/1] 0.71ns
+entry:9  call void @_ssdm_op_Write.ap_fifo.i32P(i32* %num_inputs_out, i32 %num_inputs_read)
+
+ST_1: StgValue_9 (21)  [1/1] 0.71ns
+entry:11  call void @_ssdm_op_Write.ap_fifo.i32P(i32* %batch_size_out, i32 %batch_size_read)
+
+ST_1: num_weights (22)  [3/3] 3.33ns  loc: ../fc_test/fc_layer.cpp:23
+entry:12  %num_weights = mul nsw i32 %num_inputs_read, %num_outputs_read
+
+
+ <State 2>: 3.33ns
+ST_2: num_weights (22)  [2/3] 3.33ns  loc: ../fc_test/fc_layer.cpp:23
+entry:12  %num_weights = mul nsw i32 %num_inputs_read, %num_outputs_read
+
+
+ <State 3>: 3.33ns
+ST_3: StgValue_12 (10)  [1/1] 0.00ns
+entry:0  call void (...)* @_ssdm_op_SpecInterface(i32* %num_outputs_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_3: output_offset_read (12)  [1/1] 0.00ns
+entry:2  %output_offset_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %output_offset)
+
+ST_3: enable_relu_read (13)  [1/1] 0.00ns
+entry:3  %enable_relu_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %enable_relu)
+
+ST_3: input_offset_read (14)  [1/1] 0.00ns
+entry:4  %input_offset_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %input_offset)
+
+ST_3: StgValue_16 (18)  [1/1] 0.00ns
+entry:8  call void (...)* @_ssdm_op_SpecInterface(i32* %num_inputs_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_3: StgValue_17 (20)  [1/1] 0.00ns
+entry:10  call void (...)* @_ssdm_op_SpecInterface(i32* %batch_size_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_3: num_weights (22)  [1/3] 3.33ns  loc: ../fc_test/fc_layer.cpp:23
+entry:12  %num_weights = mul nsw i32 %num_inputs_read, %num_outputs_read
+
+ST_3: tmp_2_out (23)  [1/1] 0.00ns  loc: ../fc_test/fc_layer.cpp:35
+entry:13  %tmp_2_out = sext i32 %num_weights to i64
+
+ST_3: tmp_5_i_i (24)  [1/1] 0.00ns  loc: ../fc_test/fc_layer.cpp:35
+entry:14  %tmp_5_i_i = call i30 @_ssdm_op_PartSelect.i30.i32.i32.i32(i32 %input_offset_read, i32 2, i32 31)
+
+ST_3: tmp_32_i_i (25)  [1/1] 0.00ns  loc: ../fc_test/fc_layer.cpp:35
+entry:15  %tmp_32_i_i = sext i30 %tmp_5_i_i to i62
+
+ST_3: tmp_1_out (26)  [1/1] 0.00ns  loc: ../fc_test/fc_layer.cpp:35
+entry:16  %tmp_1_out = zext i62 %tmp_32_i_i to i64
+
+ST_3: tmp_3_out (27)  [1/1] 0.00ns  loc: ../fc_test/fc_layer.cpp:42
+entry:17  %tmp_3_out = sext i32 %num_outputs_read to i64
+
+ST_3: tmp_4_out (28)  [1/1] 0.90ns  loc: ../fc_test/fc_layer.cpp:48
+entry:18  %tmp_4_out = icmp eq i32 %enable_relu_read, 0
+
+ST_3: tmp_34_i_i (29)  [1/1] 0.00ns  loc: ../fc_test/fc_layer.cpp:51
+entry:19  %tmp_34_i_i = call i30 @_ssdm_op_PartSelect.i30.i32.i32.i32(i32 %output_offset_read, i32 2, i32 31)
+
+ST_3: tmp_35_i_i (30)  [1/1] 0.00ns  loc: ../fc_test/fc_layer.cpp:51
+entry:20  %tmp_35_i_i = sext i30 %tmp_34_i_i to i62
+
+ST_3: tmp_6_out (31)  [1/1] 0.00ns  loc: ../fc_test/fc_layer.cpp:51
+entry:21  %tmp_6_out = zext i62 %tmp_35_i_i to i64
+
+ST_3: mrv (32)  [1/1] 0.00ns  loc: ../fc_test/fc_layer.cpp:35
+entry:22  %mrv = insertvalue { i64, i64, i64, i1, i64 } undef, i64 %tmp_2_out, 0
+
+ST_3: mrv_1 (33)  [1/1] 0.00ns  loc: ../fc_test/fc_layer.cpp:35
+entry:23  %mrv_1 = insertvalue { i64, i64, i64, i1, i64 } %mrv, i64 %tmp_1_out, 1
+
+ST_3: mrv_2 (34)  [1/1] 0.00ns  loc: ../fc_test/fc_layer.cpp:35
+entry:24  %mrv_2 = insertvalue { i64, i64, i64, i1, i64 } %mrv_1, i64 %tmp_3_out, 2
+
+ST_3: mrv_3 (35)  [1/1] 0.00ns  loc: ../fc_test/fc_layer.cpp:35
+entry:25  %mrv_3 = insertvalue { i64, i64, i64, i1, i64 } %mrv_2, i1 %tmp_4_out, 3
+
+ST_3: mrv_4 (36)  [1/1] 0.00ns  loc: ../fc_test/fc_layer.cpp:35
+entry:26  %mrv_4 = insertvalue { i64, i64, i64, i1, i64 } %mrv_3, i64 %tmp_6_out, 4
+
+ST_3: StgValue_33 (37)  [1/1] 0.00ns  loc: ../fc_test/fc_layer.cpp:35
+entry:27  ret { i64, i64, i64, i1, i64 } %mrv_4
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 4ns, clock uncertainty: 0.5ns.
+
+ <State 1>: 3.33ns
+The critical path consists of the following:
+	wire read on port 'num_inputs' [15]  (0 ns)
+	'mul' operation ('num_weights', ../fc_test/fc_layer.cpp:23) [22]  (3.33 ns)
+
+ <State 2>: 3.33ns
+The critical path consists of the following:
+	'mul' operation ('num_weights', ../fc_test/fc_layer.cpp:23) [22]  (3.33 ns)
+
+ <State 3>: 3.33ns
+The critical path consists of the following:
+	'mul' operation ('num_weights', ../fc_test/fc_layer.cpp:23) [22]  (3.33 ns)
+	'insertvalue' operation ('mrv', ../fc_test/fc_layer.cpp:35) [32]  (0 ns)
+	'insertvalue' operation ('mrv_1', ../fc_test/fc_layer.cpp:35) [33]  (0 ns)
+	'insertvalue' operation ('mrv_2', ../fc_test/fc_layer.cpp:35) [34]  (0 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

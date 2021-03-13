@@ -1,0 +1,302 @@
+
+
+================================================================
+== Vivado HLS Report for 'Block_proc4'
+================================================================
+* Date:           Sat Mar 13 01:16:01 2021
+
+* Version:        2017.2 (Build 1909853 on Thu Jun 15 18:55:24 MDT 2017)
+* Project:        conv_proj
+* Solution:       solution1
+* Product family: virtexu
+* Target device:  xcvu095-ffvc1517-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   4.00|      3.33|        0.50|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    5|    5|    5|    5|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 6
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+	5  / true
+5 --> 
+	6  / true
+6 --> 
+* FSM state operations: 
+
+ <State 1>: 3.33ns
+ST_1: s_read (22)  [1/1] 0.00ns
+entry:1  %s_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %s)
+
+ST_1: iy_read (23)  [1/1] 0.00ns
+entry:2  %iy_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %iy)
+
+ST_1: ix_read (24)  [1/1] 0.00ns
+entry:3  %ix_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %ix)
+
+ST_1: oy_read (25)  [1/1] 0.00ns
+entry:4  %oy_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %oy)
+
+ST_1: ox_read (26)  [1/1] 0.00ns
+entry:5  %ox_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %ox)
+
+ST_1: b_read (27)  [1/1] 0.00ns
+entry:6  %b_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %b)
+
+ST_1: k_read (30)  [1/1] 0.00ns
+entry:9  %k_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %k)
+
+ST_1: od_read (31)  [1/1] 0.00ns
+entry:10  %od_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %od)
+
+ST_1: id_read (32)  [1/1] 0.00ns
+entry:11  %id_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %id)
+
+ST_1: StgValue_16 (33)  [1/1] 0.71ns
+entry:12  call void @_ssdm_op_Write.ap_fifo.i32P(i32* %id_out, i32 %id_read)
+
+ST_1: StgValue_17 (35)  [1/1] 0.71ns
+entry:14  call void @_ssdm_op_Write.ap_fifo.i32P(i32* %od_out, i32 %od_read)
+
+ST_1: StgValue_18 (37)  [1/1] 0.71ns
+entry:16  call void @_ssdm_op_Write.ap_fifo.i32P(i32* %k_out, i32 %k_read)
+
+ST_1: StgValue_19 (39)  [1/1] 0.71ns
+entry:18  call void @_ssdm_op_Write.ap_fifo.i32P(i32* %b_out, i32 %b_read)
+
+ST_1: StgValue_20 (41)  [1/1] 0.71ns
+entry:20  call void @_ssdm_op_Write.ap_fifo.i32P(i32* %ox_out, i32 %ox_read)
+
+ST_1: StgValue_21 (43)  [1/1] 0.71ns
+entry:22  call void @_ssdm_op_Write.ap_fifo.i32P(i32* %oy_out, i32 %oy_read)
+
+ST_1: StgValue_22 (45)  [1/1] 0.71ns
+entry:24  call void @_ssdm_op_Write.ap_fifo.i32P(i32* %ix_out, i32 %ix_read)
+
+ST_1: StgValue_23 (47)  [1/1] 0.71ns
+entry:26  call void @_ssdm_op_Write.ap_fifo.i32P(i32* %iy_out, i32 %iy_read)
+
+ST_1: StgValue_24 (49)  [1/1] 0.71ns
+entry:28  call void @_ssdm_op_Write.ap_fifo.i32P(i32* %s_out, i32 %s_read)
+
+ST_1: tmp (50)  [3/3] 3.33ns  loc: ../conv_test/conv_layer.cpp:38
+entry:29  %tmp = mul i32 %od_read, %id_read
+
+ST_1: tmp4 (51)  [3/3] 3.33ns  loc: ../conv_test/conv_layer.cpp:38
+entry:30  %tmp4 = mul i32 %k_read, %k_read
+
+
+ <State 2>: 3.33ns
+ST_2: tmp (50)  [2/3] 3.33ns  loc: ../conv_test/conv_layer.cpp:38
+entry:29  %tmp = mul i32 %od_read, %id_read
+
+ST_2: tmp4 (51)  [2/3] 3.33ns  loc: ../conv_test/conv_layer.cpp:38
+entry:30  %tmp4 = mul i32 %k_read, %k_read
+
+
+ <State 3>: 3.33ns
+ST_3: tmp (50)  [1/3] 3.33ns  loc: ../conv_test/conv_layer.cpp:38
+entry:29  %tmp = mul i32 %od_read, %id_read
+
+ST_3: tmp4 (51)  [1/3] 3.33ns  loc: ../conv_test/conv_layer.cpp:38
+entry:30  %tmp4 = mul i32 %k_read, %k_read
+
+
+ <State 4>: 3.33ns
+ST_4: num_weights (52)  [3/3] 3.33ns  loc: ../conv_test/conv_layer.cpp:38
+entry:31  %num_weights = mul i32 %tmp4, %tmp
+
+
+ <State 5>: 3.33ns
+ST_5: num_weights (52)  [2/3] 3.33ns  loc: ../conv_test/conv_layer.cpp:38
+entry:31  %num_weights = mul i32 %tmp4, %tmp
+
+
+ <State 6>: 3.33ns
+ST_6: StgValue_33 (21)  [1/1] 0.00ns
+entry:0  call void (...)* @_ssdm_op_SpecInterface(i32* %id_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_6: output_offset_read (28)  [1/1] 0.00ns
+entry:7  %output_offset_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %output_offset)
+
+ST_6: input_offset_read (29)  [1/1] 0.00ns
+entry:8  %input_offset_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %input_offset)
+
+ST_6: StgValue_36 (34)  [1/1] 0.00ns
+entry:13  call void (...)* @_ssdm_op_SpecInterface(i32* %od_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_6: StgValue_37 (36)  [1/1] 0.00ns
+entry:15  call void (...)* @_ssdm_op_SpecInterface(i32* %k_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_6: StgValue_38 (38)  [1/1] 0.00ns
+entry:17  call void (...)* @_ssdm_op_SpecInterface(i32* %b_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_6: StgValue_39 (40)  [1/1] 0.00ns
+entry:19  call void (...)* @_ssdm_op_SpecInterface(i32* %ox_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_6: StgValue_40 (42)  [1/1] 0.00ns
+entry:21  call void (...)* @_ssdm_op_SpecInterface(i32* %oy_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_6: StgValue_41 (44)  [1/1] 0.00ns
+entry:23  call void (...)* @_ssdm_op_SpecInterface(i32* %ix_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_6: StgValue_42 (46)  [1/1] 0.00ns
+entry:25  call void (...)* @_ssdm_op_SpecInterface(i32* %iy_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_6: StgValue_43 (48)  [1/1] 0.00ns
+entry:27  call void (...)* @_ssdm_op_SpecInterface(i32* %s_out, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_6: num_weights (52)  [1/3] 3.33ns  loc: ../conv_test/conv_layer.cpp:38
+entry:31  %num_weights = mul i32 %tmp4, %tmp
+
+ST_6: tmp_4_out (53)  [1/1] 0.00ns  loc: ../conv_test/conv_layer.cpp:64
+entry:32  %tmp_4_out = sext i32 %num_weights to i64
+
+ST_6: tmp_6_i_i (54)  [1/1] 0.00ns  loc: ../conv_test/conv_layer.cpp:64
+entry:33  %tmp_6_i_i = call i30 @_ssdm_op_PartSelect.i30.i32.i32.i32(i32 %input_offset_read, i32 2, i32 31)
+
+ST_6: tmp_69_i_i (55)  [1/1] 0.00ns  loc: ../conv_test/conv_layer.cpp:64
+entry:34  %tmp_69_i_i = sext i30 %tmp_6_i_i to i62
+
+ST_6: tmp_3_out (56)  [1/1] 0.00ns  loc: ../conv_test/conv_layer.cpp:64
+entry:35  %tmp_3_out = zext i62 %tmp_69_i_i to i64
+
+ST_6: tmp_5_out (57)  [1/1] 0.00ns  loc: ../conv_test/conv_layer.cpp:84
+entry:36  %tmp_5_out = sext i32 %od_read to i64
+
+ST_6: tmp_71_i_i (58)  [1/1] 0.00ns  loc: ../conv_test/conv_layer.cpp:90
+entry:37  %tmp_71_i_i = call i30 @_ssdm_op_PartSelect.i30.i32.i32.i32(i32 %output_offset_read, i32 2, i32 31)
+
+ST_6: tmp_72_i_i (59)  [1/1] 0.00ns  loc: ../conv_test/conv_layer.cpp:90
+entry:38  %tmp_72_i_i = sext i30 %tmp_71_i_i to i62
+
+ST_6: tmp_7_out (60)  [1/1] 0.00ns  loc: ../conv_test/conv_layer.cpp:90
+entry:39  %tmp_7_out = zext i62 %tmp_72_i_i to i64
+
+ST_6: mrv (61)  [1/1] 0.00ns  loc: ../conv_test/conv_layer.cpp:64
+entry:40  %mrv = insertvalue { i64, i64, i64, i64 } undef, i64 %tmp_4_out, 0
+
+ST_6: mrv_1 (62)  [1/1] 0.00ns  loc: ../conv_test/conv_layer.cpp:64
+entry:41  %mrv_1 = insertvalue { i64, i64, i64, i64 } %mrv, i64 %tmp_3_out, 1
+
+ST_6: mrv_2 (63)  [1/1] 0.00ns  loc: ../conv_test/conv_layer.cpp:64
+entry:42  %mrv_2 = insertvalue { i64, i64, i64, i64 } %mrv_1, i64 %tmp_5_out, 2
+
+ST_6: mrv_3 (64)  [1/1] 0.00ns  loc: ../conv_test/conv_layer.cpp:64
+entry:43  %mrv_3 = insertvalue { i64, i64, i64, i64 } %mrv_2, i64 %tmp_7_out, 3
+
+ST_6: StgValue_57 (65)  [1/1] 0.00ns  loc: ../conv_test/conv_layer.cpp:64
+entry:44  ret { i64, i64, i64, i64 } %mrv_3
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 4ns, clock uncertainty: 0.5ns.
+
+ <State 1>: 3.33ns
+The critical path consists of the following:
+	wire read on port 'k' [30]  (0 ns)
+	'mul' operation ('tmp4', ../conv_test/conv_layer.cpp:38) [51]  (3.33 ns)
+
+ <State 2>: 3.33ns
+The critical path consists of the following:
+	'mul' operation ('tmp', ../conv_test/conv_layer.cpp:38) [50]  (3.33 ns)
+
+ <State 3>: 3.33ns
+The critical path consists of the following:
+	'mul' operation ('tmp', ../conv_test/conv_layer.cpp:38) [50]  (3.33 ns)
+
+ <State 4>: 3.33ns
+The critical path consists of the following:
+	'mul' operation ('num_weights', ../conv_test/conv_layer.cpp:38) [52]  (3.33 ns)
+
+ <State 5>: 3.33ns
+The critical path consists of the following:
+	'mul' operation ('num_weights', ../conv_test/conv_layer.cpp:38) [52]  (3.33 ns)
+
+ <State 6>: 3.33ns
+The critical path consists of the following:
+	'mul' operation ('num_weights', ../conv_test/conv_layer.cpp:38) [52]  (3.33 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

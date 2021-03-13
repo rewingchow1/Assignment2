@@ -1,0 +1,245 @@
+
+
+================================================================
+== Vivado HLS Report for 'fc_layer'
+================================================================
+* Date:           Sat Mar 13 01:17:01 2021
+
+* Version:        2017.2 (Build 1909853 on Thu Jun 15 18:55:24 MDT 2017)
+* Project:        fc_proj
+* Solution:       solution1
+* Product family: virtexu
+* Target device:  xcvu095-ffvc1517-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   4.00|      3.50|        0.50|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----------+-----+------------+----------+
+    |     Latency     |     Interval     | Pipeline |
+    | min |    max    | min |     max    |   Type   |
+    +-----+-----------+-----+------------+----------+
+    |   49|  659857415|   47|  9249792005| dataflow |
+    +-----+-----------+-----+------------+----------+
+
+    + Detail: 
+        * Instance: 
+        +-------------------------+----------------------+-----+------------+-----+------------+---------+
+        |                         |                      |      Latency     |     Interval     | Pipeline|
+        |         Instance        |        Module        | min |     max    | min |     max    |   Type  |
+        +-------------------------+----------------------+-----+------------+-----+------------+---------+
+        |Loop_batch_loop_proc_U0  |Loop_batch_loop_proc  |   46|  9249792004|   46|  9249792004|   none  |
+        |Block_proc4_U0           |Block_proc4           |    2|           2|    2|           2|   none  |
+        +-------------------------+----------------------+-----+------------+-----+------------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+---------+--------+
+|       Name      | BRAM_18K| DSP48E|    FF   |   LUT  |
++-----------------+---------+-------+---------+--------+
+|DSP              |        -|      -|        -|       -|
+|Expression       |        -|      -|       44|      66|
+|FIFO             |        0|      -|        0|       8|
+|Instance         |        2|     25|     5210|    3230|
+|Memory           |        -|      -|        -|       -|
+|Multiplexer      |        -|      -|        -|      81|
+|Register         |        -|      -|       11|       -|
++-----------------+---------+-------+---------+--------+
+|Total            |        2|     25|     5265|    3385|
++-----------------+---------+-------+---------+--------+
+|Available        |     3456|    768|  1075200|  537600|
++-----------------+---------+-------+---------+--------+
+|Utilization (%)  |    ~0   |      3|    ~0   |   ~0   |
++-----------------+---------+-------+---------+--------+
+
++ Detail: 
+    * Instance: 
+    +---------------------------+-------------------------+---------+-------+------+------+
+    |          Instance         |          Module         | BRAM_18K| DSP48E|  FF  |  LUT |
+    +---------------------------+-------------------------+---------+-------+------+------+
+    |Block_proc4_U0             |Block_proc4              |        0|      4|   423|   165|
+    |Loop_batch_loop_proc_U0    |Loop_batch_loop_proc     |        0|     21|  4011|  2061|
+    |fc_layer_CTRL_BUS_s_axi_U  |fc_layer_CTRL_BUS_s_axi  |        0|      0|   264|   424|
+    |fc_layer_mem_m_axi_U       |fc_layer_mem_m_axi       |        2|      0|   512|   580|
+    +---------------------------+-------------------------+---------+-------+------+------+
+    |Total                      |                         |        2|     25|  5210|  3230|
+    +---------------------------+-------------------------+---------+-------+------+------+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +-----------------------+---------+---+----+------+-----+---------+
+    |          Name         | BRAM_18K| FF| LUT| Depth| Bits| Size:D*B|
+    +-----------------------+---------+---+----+------+-----+---------+
+    |batch_size_channel_U   |        0|  0|   1|     1|   32|       32|
+    |num_inputs_channel_U   |        0|  0|   1|     1|   32|       32|
+    |num_outputs_channel_U  |        0|  0|   1|     1|   32|       32|
+    |tmp_1_loc_channel_U    |        0|  0|   1|     2|   64|      128|
+    |tmp_2_loc_channel_U    |        0|  0|   1|     2|   64|      128|
+    |tmp_3_loc_channel_U    |        0|  0|   1|     2|   64|      128|
+    |tmp_4_loc_channel_U    |        0|  0|   1|     2|    1|        2|
+    |tmp_6_loc_channel_U    |        0|  0|   1|     2|   64|      128|
+    +-----------------------+---------+---+----+------+-----+---------+
+    |Total                  |        0|  0|   8|    13|  353|      610|
+    +-----------------------+---------+---+----+------+-----+---------+
+
+    * Expression: 
+    +------------------------------------------+----------+-------+----+----+------------+------------+
+    |               Variable Name              | Operation| DSP48E| FF | LUT| Bitwidth P0| Bitwidth P1|
+    +------------------------------------------+----------+-------+----+----+------------+------------+
+    |Block_proc4_U0_ap_ready_count             |     +    |      0|  11|   8|           2|           1|
+    |Loop_batch_loop_proc_U0_ap_ready_count    |     +    |      0|  11|   8|           2|           1|
+    |Block_proc4_U0_ap_ready_count             |     -    |      0|  11|   8|           2|           1|
+    |Loop_batch_loop_proc_U0_ap_ready_count    |     -    |      0|  11|   8|           2|           1|
+    |Block_proc4_U0_ap_continue                |    and   |      0|   0|   2|           1|           1|
+    |Block_proc4_U0_ap_start                   |    and   |      0|   0|   2|           1|           1|
+    |Loop_batch_loop_proc_U0_ap_start          |    and   |      0|   0|   2|           1|           1|
+    |ap_channel_done_tmp_1_loc_channel         |    and   |      0|   0|   2|           1|           1|
+    |ap_channel_done_tmp_2_loc_channel         |    and   |      0|   0|   2|           1|           1|
+    |ap_channel_done_tmp_3_loc_channel         |    and   |      0|   0|   2|           1|           1|
+    |ap_channel_done_tmp_4_loc_channel         |    and   |      0|   0|   2|           1|           1|
+    |ap_channel_done_tmp_6_loc_channel         |    and   |      0|   0|   2|           1|           1|
+    |ap_idle                                   |    and   |      0|   0|   2|           1|           1|
+    |ap_sync_ready                             |    and   |      0|   0|   2|           1|           1|
+    |ap_sync_Block_proc4_U0_ap_ready           |    or    |      0|   0|   2|           1|           1|
+    |ap_sync_Loop_batch_loop_proc_U0_ap_ready  |    or    |      0|   0|   2|           1|           1|
+    |ap_sync_channel_write_tmp_1_loc_channel   |    or    |      0|   0|   2|           1|           1|
+    |ap_sync_channel_write_tmp_2_loc_channel   |    or    |      0|   0|   2|           1|           1|
+    |ap_sync_channel_write_tmp_3_loc_channel   |    or    |      0|   0|   2|           1|           1|
+    |ap_sync_channel_write_tmp_4_loc_channel   |    or    |      0|   0|   2|           1|           1|
+    |ap_sync_channel_write_tmp_6_loc_channel   |    or    |      0|   0|   2|           1|           1|
+    +------------------------------------------+----------+-------+----+----+------------+------------+
+    |Total                                     |          |      0|  44|  66|          25|          21|
+    +------------------------------------------+----------+-------+----+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------------------------+----+-----------+-----+-----------+
+    |                     Name                     | LUT| Input Size| Bits| Total Bits|
+    +----------------------------------------------+----+-----------+-----+-----------+
+    |Block_proc4_U0_ap_ready_count                 |   9|          2|    2|          4|
+    |Loop_batch_loop_proc_U0_ap_ready_count        |   9|          2|    2|          4|
+    |ap_sync_reg_Block_proc4_U0_ap_ready           |   9|          2|    1|          2|
+    |ap_sync_reg_Loop_batch_loop_proc_U0_ap_ready  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_tmp_1_loc_channel   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_tmp_2_loc_channel   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_tmp_3_loc_channel   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_tmp_4_loc_channel   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_tmp_6_loc_channel   |   9|          2|    1|          2|
+    +----------------------------------------------+----+-----------+-----+-----------+
+    |Total                                         |  81|         18|   11|         22|
+    +----------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------------------+---+----+-----+-----------+
+    |                     Name                     | FF| LUT| Bits| Const Bits|
+    +----------------------------------------------+---+----+-----+-----------+
+    |Block_proc4_U0_ap_ready_count                 |  2|   0|    2|          0|
+    |Loop_batch_loop_proc_U0_ap_ready_count        |  2|   0|    2|          0|
+    |ap_sync_reg_Block_proc4_U0_ap_ready           |  1|   0|    1|          0|
+    |ap_sync_reg_Loop_batch_loop_proc_U0_ap_ready  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_tmp_1_loc_channel   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_tmp_2_loc_channel   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_tmp_3_loc_channel   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_tmp_4_loc_channel   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_tmp_6_loc_channel   |  1|   0|    1|          0|
+    +----------------------------------------------+---+----+-----+-----------+
+    |Total                                         | 11|   0|   11|          0|
+    +----------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------+-----+-----+------------+--------------+--------------+
+|        RTL Ports       | Dir | Bits|  Protocol  | Source Object|    C Type    |
++------------------------+-----+-----+------------+--------------+--------------+
+|s_axi_CTRL_BUS_AWVALID  |  in |    1|    s_axi   |   CTRL_BUS   |    scalar    |
+|s_axi_CTRL_BUS_AWREADY  | out |    1|    s_axi   |   CTRL_BUS   |    scalar    |
+|s_axi_CTRL_BUS_AWADDR   |  in |    6|    s_axi   |   CTRL_BUS   |    scalar    |
+|s_axi_CTRL_BUS_WVALID   |  in |    1|    s_axi   |   CTRL_BUS   |    scalar    |
+|s_axi_CTRL_BUS_WREADY   | out |    1|    s_axi   |   CTRL_BUS   |    scalar    |
+|s_axi_CTRL_BUS_WDATA    |  in |   32|    s_axi   |   CTRL_BUS   |    scalar    |
+|s_axi_CTRL_BUS_WSTRB    |  in |    4|    s_axi   |   CTRL_BUS   |    scalar    |
+|s_axi_CTRL_BUS_ARVALID  |  in |    1|    s_axi   |   CTRL_BUS   |    scalar    |
+|s_axi_CTRL_BUS_ARREADY  | out |    1|    s_axi   |   CTRL_BUS   |    scalar    |
+|s_axi_CTRL_BUS_ARADDR   |  in |    6|    s_axi   |   CTRL_BUS   |    scalar    |
+|s_axi_CTRL_BUS_RVALID   | out |    1|    s_axi   |   CTRL_BUS   |    scalar    |
+|s_axi_CTRL_BUS_RREADY   |  in |    1|    s_axi   |   CTRL_BUS   |    scalar    |
+|s_axi_CTRL_BUS_RDATA    | out |   32|    s_axi   |   CTRL_BUS   |    scalar    |
+|s_axi_CTRL_BUS_RRESP    | out |    2|    s_axi   |   CTRL_BUS   |    scalar    |
+|s_axi_CTRL_BUS_BVALID   | out |    1|    s_axi   |   CTRL_BUS   |    scalar    |
+|s_axi_CTRL_BUS_BREADY   |  in |    1|    s_axi   |   CTRL_BUS   |    scalar    |
+|s_axi_CTRL_BUS_BRESP    | out |    2|    s_axi   |   CTRL_BUS   |    scalar    |
+|ap_clk                  |  in |    1| ap_ctrl_hs |   fc_layer   | return value |
+|ap_rst_n                |  in |    1| ap_ctrl_hs |   fc_layer   | return value |
+|interrupt               | out |    1| ap_ctrl_hs |   fc_layer   | return value |
+|m_axi_mem_AWVALID       | out |    1|    m_axi   |      mem     |    pointer   |
+|m_axi_mem_AWREADY       |  in |    1|    m_axi   |      mem     |    pointer   |
+|m_axi_mem_AWADDR        | out |   64|    m_axi   |      mem     |    pointer   |
+|m_axi_mem_AWID          | out |    1|    m_axi   |      mem     |    pointer   |
+|m_axi_mem_AWLEN         | out |    8|    m_axi   |      mem     |    pointer   |
+|m_axi_mem_AWSIZE        | out |    3|    m_axi   |      mem     |    pointer   |
+|m_axi_mem_AWBURST       | out |    2|    m_axi   |      mem     |    pointer   |
+|m_axi_mem_AWLOCK        | out |    2|    m_axi   |      mem     |    pointer   |
+|m_axi_mem_AWCACHE       | out |    4|    m_axi   |      mem     |    pointer   |
+|m_axi_mem_AWPROT        | out |    3|    m_axi   |      mem     |    pointer   |
+|m_axi_mem_AWQOS         | out |    4|    m_axi   |      mem     |    pointer   |
+|m_axi_mem_AWREGION      | out |    4|    m_axi   |      mem     |    pointer   |
+|m_axi_mem_AWUSER        | out |    1|    m_axi   |      mem     |    pointer   |
+|m_axi_mem_WVALID        | out |    1|    m_axi   |      mem     |    pointer   |
+|m_axi_mem_WREADY        |  in |    1|    m_axi   |      mem     |    pointer   |
+|m_axi_mem_WDATA         | out |   32|    m_axi   |      mem     |    pointer   |
+|m_axi_mem_WSTRB         | out |    4|    m_axi   |      mem     |    pointer   |
+|m_axi_mem_WLAST         | out |    1|    m_axi   |      mem     |    pointer   |
+|m_axi_mem_WID           | out |    1|    m_axi   |      mem     |    pointer   |
+|m_axi_mem_WUSER         | out |    1|    m_axi   |      mem     |    pointer   |
+|m_axi_mem_ARVALID       | out |    1|    m_axi   |      mem     |    pointer   |
+|m_axi_mem_ARREADY       |  in |    1|    m_axi   |      mem     |    pointer   |
+|m_axi_mem_ARADDR        | out |   64|    m_axi   |      mem     |    pointer   |
+|m_axi_mem_ARID          | out |    1|    m_axi   |      mem     |    pointer   |
+|m_axi_mem_ARLEN         | out |    8|    m_axi   |      mem     |    pointer   |
+|m_axi_mem_ARSIZE        | out |    3|    m_axi   |      mem     |    pointer   |
+|m_axi_mem_ARBURST       | out |    2|    m_axi   |      mem     |    pointer   |
+|m_axi_mem_ARLOCK        | out |    2|    m_axi   |      mem     |    pointer   |
+|m_axi_mem_ARCACHE       | out |    4|    m_axi   |      mem     |    pointer   |
+|m_axi_mem_ARPROT        | out |    3|    m_axi   |      mem     |    pointer   |
+|m_axi_mem_ARQOS         | out |    4|    m_axi   |      mem     |    pointer   |
+|m_axi_mem_ARREGION      | out |    4|    m_axi   |      mem     |    pointer   |
+|m_axi_mem_ARUSER        | out |    1|    m_axi   |      mem     |    pointer   |
+|m_axi_mem_RVALID        |  in |    1|    m_axi   |      mem     |    pointer   |
+|m_axi_mem_RREADY        | out |    1|    m_axi   |      mem     |    pointer   |
+|m_axi_mem_RDATA         |  in |   32|    m_axi   |      mem     |    pointer   |
+|m_axi_mem_RLAST         |  in |    1|    m_axi   |      mem     |    pointer   |
+|m_axi_mem_RID           |  in |    1|    m_axi   |      mem     |    pointer   |
+|m_axi_mem_RUSER         |  in |    1|    m_axi   |      mem     |    pointer   |
+|m_axi_mem_RRESP         |  in |    2|    m_axi   |      mem     |    pointer   |
+|m_axi_mem_BVALID        |  in |    1|    m_axi   |      mem     |    pointer   |
+|m_axi_mem_BREADY        | out |    1|    m_axi   |      mem     |    pointer   |
+|m_axi_mem_BRESP         |  in |    2|    m_axi   |      mem     |    pointer   |
+|m_axi_mem_BID           |  in |    1|    m_axi   |      mem     |    pointer   |
+|m_axi_mem_BUSER         |  in |    1|    m_axi   |      mem     |    pointer   |
++------------------------+-----+-----+------------+--------------+--------------+
+

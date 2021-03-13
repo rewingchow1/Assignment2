@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sat Mar 13 01:18:15 2021
+# Process ID: 8063
+# Current directory: /home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.runs/pr_region_2_auto_rs_1_synth_1
+# Command line: vivado -log pr_region_2_auto_rs_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source pr_region_2_auto_rs_1.tcl
+# Log file: /home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.runs/pr_region_2_auto_rs_1_synth_1/pr_region_2_auto_rs_1.vds
+# Journal file: /home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.runs/pr_region_2_auto_rs_1_synth_1/vivado.jou
+#-----------------------------------------------------------
+source pr_region_2_auto_rs_1.tcl -notrace

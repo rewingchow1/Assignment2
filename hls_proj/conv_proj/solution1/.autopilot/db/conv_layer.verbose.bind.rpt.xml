@@ -1,0 +1,47 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'conv_layer'" level="0">
+<item name = "Date">Sat Mar 13 01:16:03 2021
+</item>
+<item name = "Version">2017.2 (Build 1909853 on Thu Jun 15 18:55:24 MDT 2017)</item>
+<item name = "Project">conv_proj</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">virtexu</item>
+<item name = "Target device">xcvu095-ffvc1517-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">4.00, 3.50, 0.50</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">83, 2130706458, 78, 10666534502421, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_Loop_batch_loop_proc_fu_186">Loop_batch_loop_proc, 77, 10666534502420, 77, 10666534502420, none</column>
+<column name="grp_Block_proc4_fu_205">Block_proc4, 5, 5, 5, 5, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

@@ -1,0 +1,956 @@
+
+*** Running vivado
+    with args -log pr_region_2_conv_layer_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source pr_region_2_conv_layer_0_0.tcl
+
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source pr_region_2_conv_layer_0_0.tcl -notrace
+Command: synth_design -top pr_region_2_conv_layer_0_0 -part xcvu095-ffvc1517-2-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcvu095-ffvc1517'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcvu095-ffvc1517'
+INFO: [Common 17-1223] The version limit for your license is '2020.02' and will expire in -378 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8392 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1243.250 ; gain = 22.000 ; free physical = 57648 ; free virtual = 60694
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'pr_region_2_conv_layer_0_0' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ip/pr_region_2_conv_layer_0_0/synth/pr_region_2_conv_layer_0_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'conv_layer' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer.v:12]
+INFO: [Synth 8-638] synthesizing module 'conv_layer_CTRL_BUS_s_axi' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_CTRL_BUS_s_axi.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_CTRL_BUS_s_axi.v:266]
+WARNING: [Synth 8-6014] Unused sequential element int_isr_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_CTRL_BUS_s_axi.v:323]
+WARNING: [Synth 8-6014] Unused sequential element int_isr_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_CTRL_BUS_s_axi.v:407]
+INFO: [Synth 8-256] done synthesizing module 'conv_layer_CTRL_BUS_s_axi' (1#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_CTRL_BUS_s_axi.v:9]
+INFO: [Synth 8-638] synthesizing module 'conv_layer_mem_m_axi' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:10]
+INFO: [Synth 8-638] synthesizing module 'conv_layer_mem_m_axi_throttl' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:687]
+INFO: [Synth 8-256] done synthesizing module 'conv_layer_mem_m_axi_throttl' (2#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:687]
+INFO: [Synth 8-638] synthesizing module 'conv_layer_mem_m_axi_write' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:1500]
+INFO: [Synth 8-638] synthesizing module 'conv_layer_mem_m_axi_fifo' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:397]
+WARNING: [Synth 8-6014] Unused sequential element i was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:495]
+INFO: [Synth 8-256] done synthesizing module 'conv_layer_mem_m_axi_fifo' (3#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:397]
+INFO: [Synth 8-638] synthesizing module 'conv_layer_mem_m_axi_reg_slice' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:293]
+INFO: [Synth 8-256] done synthesizing module 'conv_layer_mem_m_axi_reg_slice' (4#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:293]
+INFO: [Synth 8-638] synthesizing module 'conv_layer_mem_m_axi_fifo__parameterized0' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:397]
+WARNING: [Synth 8-6014] Unused sequential element i was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:495]
+INFO: [Synth 8-256] done synthesizing module 'conv_layer_mem_m_axi_fifo__parameterized0' (4#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:397]
+INFO: [Synth 8-638] synthesizing module 'conv_layer_mem_m_axi_buffer' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:506]
+INFO: [Synth 8-256] done synthesizing module 'conv_layer_mem_m_axi_buffer' (5#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:506]
+INFO: [Synth 8-638] synthesizing module 'conv_layer_mem_m_axi_fifo__parameterized1' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:397]
+WARNING: [Synth 8-6014] Unused sequential element i was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:495]
+INFO: [Synth 8-256] done synthesizing module 'conv_layer_mem_m_axi_fifo__parameterized1' (5#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:397]
+INFO: [Synth 8-638] synthesizing module 'conv_layer_mem_m_axi_fifo__parameterized2' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:397]
+WARNING: [Synth 8-6014] Unused sequential element i was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:495]
+INFO: [Synth 8-256] done synthesizing module 'conv_layer_mem_m_axi_fifo__parameterized2' (5#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:397]
+WARNING: [Synth 8-6014] Unused sequential element sect_end_buf_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:1864]
+WARNING: [Synth 8-3848] Net AWREGION in module/entity conv_layer_mem_m_axi_write does not have driver. [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:1532]
+WARNING: [Synth 8-3848] Net WID in module/entity conv_layer_mem_m_axi_write does not have driver. [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:1537]
+WARNING: [Synth 8-3848] Net WUSER in module/entity conv_layer_mem_m_axi_write does not have driver. [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:1541]
+INFO: [Synth 8-256] done synthesizing module 'conv_layer_mem_m_axi_write' (6#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:1500]
+INFO: [Synth 8-638] synthesizing module 'conv_layer_mem_m_axi_read' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:739]
+INFO: [Synth 8-638] synthesizing module 'conv_layer_mem_m_axi_buffer__parameterized0' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:506]
+INFO: [Synth 8-256] done synthesizing module 'conv_layer_mem_m_axi_buffer__parameterized0' (6#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:506]
+INFO: [Synth 8-638] synthesizing module 'conv_layer_mem_m_axi_reg_slice__parameterized0' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:293]
+INFO: [Synth 8-256] done synthesizing module 'conv_layer_mem_m_axi_reg_slice__parameterized0' (6#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:293]
+WARNING: [Synth 8-6014] Unused sequential element sect_end_buf_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:1070]
+WARNING: [Synth 8-3848] Net ARREGION in module/entity conv_layer_mem_m_axi_read does not have driver. [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:770]
+INFO: [Synth 8-256] done synthesizing module 'conv_layer_mem_m_axi_read' (7#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:739]
+INFO: [Synth 8-256] done synthesizing module 'conv_layer_mem_m_axi' (8#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:10]
+INFO: [Synth 8-638] synthesizing module 'Block_proc4' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Block_proc4.v:10]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Block_proc4.v:137]
+INFO: [Synth 8-638] synthesizing module 'conv_layer_mul_32bkb' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_32bkb.v:35]
+INFO: [Synth 8-638] synthesizing module 'conv_layer_mul_32bkb_MulnS_0' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_32bkb.v:11]
+INFO: [Synth 8-256] done synthesizing module 'conv_layer_mul_32bkb_MulnS_0' (9#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_32bkb.v:11]
+INFO: [Synth 8-256] done synthesizing module 'conv_layer_mul_32bkb' (10#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_32bkb.v:35]
+WARNING: [Synth 8-6014] Unused sequential element b_out_blk_n_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Block_proc4.v:477]
+WARNING: [Synth 8-6014] Unused sequential element id_out_blk_n_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Block_proc4.v:509]
+WARNING: [Synth 8-6014] Unused sequential element ix_out_blk_n_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Block_proc4.v:525]
+WARNING: [Synth 8-6014] Unused sequential element iy_out_blk_n_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Block_proc4.v:541]
+WARNING: [Synth 8-6014] Unused sequential element k_out_blk_n_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Block_proc4.v:557]
+WARNING: [Synth 8-6014] Unused sequential element od_out_blk_n_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Block_proc4.v:573]
+WARNING: [Synth 8-6014] Unused sequential element ox_out_blk_n_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Block_proc4.v:589]
+WARNING: [Synth 8-6014] Unused sequential element oy_out_blk_n_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Block_proc4.v:605]
+WARNING: [Synth 8-6014] Unused sequential element s_out_blk_n_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Block_proc4.v:621]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state1_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Block_proc4.v:676]
+WARNING: [Synth 8-6014] Unused sequential element grp_fu_206_ce_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Block_proc4.v:211]
+WARNING: [Synth 8-6014] Unused sequential element id_out_write_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Block_proc4.v:517]
+WARNING: [Synth 8-6014] Unused sequential element ix_out_write_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Block_proc4.v:533]
+WARNING: [Synth 8-6014] Unused sequential element iy_out_write_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Block_proc4.v:549]
+WARNING: [Synth 8-6014] Unused sequential element k_out_write_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Block_proc4.v:565]
+WARNING: [Synth 8-6014] Unused sequential element od_out_write_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Block_proc4.v:581]
+WARNING: [Synth 8-6014] Unused sequential element ox_out_write_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Block_proc4.v:597]
+WARNING: [Synth 8-6014] Unused sequential element oy_out_write_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Block_proc4.v:613]
+WARNING: [Synth 8-6014] Unused sequential element s_out_write_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Block_proc4.v:629]
+WARNING: [Synth 8-6014] Unused sequential element ap_return_1_preg_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Block_proc4.v:262]
+WARNING: [Synth 8-6014] Unused sequential element ap_return_3_preg_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Block_proc4.v:343]
+WARNING: [Synth 8-6014] Unused sequential element ap_return_1_preg_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Block_proc4.v:716]
+WARNING: [Synth 8-6014] Unused sequential element ap_return_3_preg_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Block_proc4.v:717]
+INFO: [Synth 8-256] done synthesizing module 'Block_proc4' (11#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Block_proc4.v:10]
+INFO: [Synth 8-638] synthesizing module 'Loop_batch_loop_proc' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:10]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:249]
+INFO: [Synth 8-638] synthesizing module 'conv_layer_fadd_3cud' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_fadd_3cud.v:11]
+INFO: [Synth 8-638] synthesizing module 'conv_layer_ap_fadd_7_full_dsp_32' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/ip/conv_layer_ap_fadd_7_full_dsp_32.vhd:72]
+INFO: [Synth 8-3491] module 'floating_point_v7_1_4' declared at '/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/4a02/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_4' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/ip/conv_layer_ap_fadd_7_full_dsp_32.vhd:197]
+INFO: [Synth 8-256] done synthesizing module 'conv_layer_ap_fadd_7_full_dsp_32' (29#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/ip/conv_layer_ap_fadd_7_full_dsp_32.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'conv_layer_fadd_3cud' (30#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_fadd_3cud.v:11]
+INFO: [Synth 8-638] synthesizing module 'conv_layer_fmul_3dEe' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_fmul_3dEe.v:11]
+INFO: [Synth 8-638] synthesizing module 'conv_layer_ap_fmul_3_max_dsp_32' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/ip/conv_layer_ap_fmul_3_max_dsp_32.vhd:72]
+INFO: [Synth 8-3491] module 'floating_point_v7_1_4' declared at '/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/4a02/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_4' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/ip/conv_layer_ap_fmul_3_max_dsp_32.vhd:197]
+INFO: [Synth 8-256] done synthesizing module 'conv_layer_ap_fmul_3_max_dsp_32' (38#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/ip/conv_layer_ap_fmul_3_max_dsp_32.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'conv_layer_fmul_3dEe' (39#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_fmul_3dEe.v:11]
+INFO: [Synth 8-638] synthesizing module 'conv_layer_fcmp_3eOg' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_fcmp_3eOg.v:11]
+INFO: [Synth 8-638] synthesizing module 'conv_layer_ap_fcmp_0_no_dsp_32' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/ip/conv_layer_ap_fcmp_0_no_dsp_32.vhd:72]
+INFO: [Synth 8-3491] module 'floating_point_v7_1_4' declared at '/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/4a02/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_4' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/ip/conv_layer_ap_fcmp_0_no_dsp_32.vhd:197]
+INFO: [Synth 8-256] done synthesizing module 'conv_layer_ap_fcmp_0_no_dsp_32' (43#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/ip/conv_layer_ap_fcmp_0_no_dsp_32.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'conv_layer_fcmp_3eOg' (44#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_fcmp_3eOg.v:11]
+INFO: [Synth 8-638] synthesizing module 'conv_layer_mul_32fYi' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_32fYi.v:35]
+INFO: [Synth 8-638] synthesizing module 'conv_layer_mul_32fYi_MulnS_1' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_32fYi.v:11]
+INFO: [Synth 8-256] done synthesizing module 'conv_layer_mul_32fYi_MulnS_1' (45#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_32fYi.v:11]
+INFO: [Synth 8-256] done synthesizing module 'conv_layer_mul_32fYi' (46#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_32fYi.v:35]
+INFO: [Synth 8-638] synthesizing module 'conv_layer_mul_64g8j' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_64g8j.v:39]
+INFO: [Synth 8-638] synthesizing module 'conv_layer_mul_64g8j_MulnS_2' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_64g8j.v:11]
+INFO: [Synth 8-256] done synthesizing module 'conv_layer_mul_64g8j_MulnS_2' (47#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_64g8j.v:11]
+INFO: [Synth 8-256] done synthesizing module 'conv_layer_mul_64g8j' (48#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_64g8j.v:39]
+INFO: [Synth 8-638] synthesizing module 'conv_layer_mul_96hbi' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_96hbi.v:39]
+INFO: [Synth 8-638] synthesizing module 'conv_layer_mul_96hbi_MulnS_3' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_96hbi.v:11]
+INFO: [Synth 8-256] done synthesizing module 'conv_layer_mul_96hbi_MulnS_3' (49#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_96hbi.v:11]
+INFO: [Synth 8-256] done synthesizing module 'conv_layer_mul_96hbi' (50#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_96hbi.v:39]
+INFO: [Synth 8-638] synthesizing module 'conv_layer_mul_31ibs' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_31ibs.v:35]
+INFO: [Synth 8-638] synthesizing module 'conv_layer_mul_31ibs_MulnS_4' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_31ibs.v:11]
+INFO: [Synth 8-256] done synthesizing module 'conv_layer_mul_31ibs_MulnS_4' (51#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_31ibs.v:11]
+INFO: [Synth 8-256] done synthesizing module 'conv_layer_mul_31ibs' (52#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_31ibs.v:35]
+INFO: [Synth 8-638] synthesizing module 'conv_layer_mul_32jbC' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_32jbC.v:35]
+INFO: [Synth 8-638] synthesizing module 'conv_layer_mul_32jbC_MulnS_5' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_32jbC.v:11]
+INFO: [Synth 8-256] done synthesizing module 'conv_layer_mul_32jbC_MulnS_5' (53#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_32jbC.v:11]
+INFO: [Synth 8-256] done synthesizing module 'conv_layer_mul_32jbC' (54#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_32jbC.v:35]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:2885]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:2963]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:2965]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:2969]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:2973]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:2975]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:2979]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:2981]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:2985]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:2987]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:2993]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:2995]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3001]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3005]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3007]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3009]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3011]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3013]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3015]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3017]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3019]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3021]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3023]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3025]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3027]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3029]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3031]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3107]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3109]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3115]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3117]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3125]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3127]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3129]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3131]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3137]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3141]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3143]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3145]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3147]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3173]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3175]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3199]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3213]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3215]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3225]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3227]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3233]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3235]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3239]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3241]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3251]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3257]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3265]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3271]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3273]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3277]
+WARNING: [Synth 8-6014] Unused sequential element ap_idle_pp0_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:1935]
+WARNING: [Synth 8-6014] Unused sequential element b_blk_n_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:1975]
+WARNING: [Synth 8-6014] Unused sequential element id_blk_n_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:2159]
+WARNING: [Synth 8-6014] Unused sequential element ix_blk_n_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:2207]
+WARNING: [Synth 8-6014] Unused sequential element iy_blk_n_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:2223]
+WARNING: [Synth 8-6014] Unused sequential element k_blk_n_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:2239]
+WARNING: [Synth 8-6014] Unused sequential element mem_blk_n_AR_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:2311]
+WARNING: [Synth 8-6014] Unused sequential element mem_blk_n_AW_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:2319]
+WARNING: [Synth 8-6014] Unused sequential element mem_blk_n_B_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:2327]
+WARNING: [Synth 8-6014] Unused sequential element mem_blk_n_R_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:2335]
+WARNING: [Synth 8-6014] Unused sequential element mem_blk_n_W_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:2343]
+WARNING: [Synth 8-6014] Unused sequential element od_blk_n_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:2351]
+WARNING: [Synth 8-6014] Unused sequential element ox_blk_n_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:2367]
+WARNING: [Synth 8-6014] Unused sequential element oy_blk_n_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:2383]
+WARNING: [Synth 8-6014] Unused sequential element s_blk_n_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:2399]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state1_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:2784]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state48_pp0_stage7_iter1_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:2828]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_state49_pp0_stage8_iter1_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:2832]
+WARNING: [Synth 8-6014] Unused sequential element grp_fu_737_ce_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:1027]
+WARNING: [Synth 8-6014] Unused sequential element grp_fu_816_ce_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:1042]
+WARNING: [Synth 8-6014] Unused sequential element grp_fu_821_ce_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:1057]
+WARNING: [Synth 8-6014] Unused sequential element grp_fu_877_ce_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:1072]
+WARNING: [Synth 8-6014] Unused sequential element grp_fu_882_ce_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:1087]
+WARNING: [Synth 8-6014] Unused sequential element id_read_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:2167]
+WARNING: [Synth 8-6014] Unused sequential element ix_read_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:2215]
+WARNING: [Synth 8-6014] Unused sequential element iy_read_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:2231]
+WARNING: [Synth 8-6014] Unused sequential element k_read_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:2247]
+WARNING: [Synth 8-6014] Unused sequential element od_read_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:2359]
+WARNING: [Synth 8-6014] Unused sequential element ox_read_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:2375]
+WARNING: [Synth 8-6014] Unused sequential element oy_read_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:2391]
+WARNING: [Synth 8-6014] Unused sequential element s_read_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:2407]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_pp0_stage0_flag00011011_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:2718]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_pp0_stage1_flag00011011_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:2730]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_pp0_stage7_flag00011011_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:2770]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_pp0_stage8_flag00011001_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:2776]
+WARNING: [Synth 8-6014] Unused sequential element ap_block_pp0_stage8_flag00011011_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:2780]
+WARNING: [Synth 8-6014] Unused sequential element cast7_reg_1708_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:1615]
+WARNING: [Synth 8-6014] Unused sequential element o_d_cast_i_i_mid1_reg_1713_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:1654]
+WARNING: [Synth 8-6014] Unused sequential element tmp_40_i_i_cast_mid2_2_reg_2074_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:1869]
+WARNING: [Synth 8-6014] Unused sequential element cast7_reg_1708_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:2903]
+WARNING: [Synth 8-6014] Unused sequential element o_d_cast_i_i_mid1_reg_1713_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:2943]
+WARNING: [Synth 8-6014] Unused sequential element tmp_40_i_i_cast_mid2_2_reg_2074_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:2913]
+INFO: [Synth 8-256] done synthesizing module 'Loop_batch_loop_proc' (55#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:10]
+INFO: [Synth 8-638] synthesizing module 'fifo_w32_d1_A' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/fifo_w32_d1_A.v:45]
+INFO: [Synth 8-638] synthesizing module 'fifo_w32_d1_A_shiftReg' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/fifo_w32_d1_A.v:11]
+WARNING: [Synth 8-6014] Unused sequential element i was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/fifo_w32_d1_A.v:33]
+INFO: [Synth 8-256] done synthesizing module 'fifo_w32_d1_A_shiftReg' (56#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/fifo_w32_d1_A.v:11]
+INFO: [Synth 8-256] done synthesizing module 'fifo_w32_d1_A' (57#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/fifo_w32_d1_A.v:45]
+INFO: [Synth 8-638] synthesizing module 'fifo_w64_d2_A' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/fifo_w64_d2_A.v:45]
+INFO: [Synth 8-638] synthesizing module 'fifo_w64_d2_A_shiftReg' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/fifo_w64_d2_A.v:11]
+WARNING: [Synth 8-6014] Unused sequential element i was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/fifo_w64_d2_A.v:33]
+INFO: [Synth 8-256] done synthesizing module 'fifo_w64_d2_A_shiftReg' (58#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/fifo_w64_d2_A.v:11]
+INFO: [Synth 8-256] done synthesizing module 'fifo_w64_d2_A' (59#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/fifo_w64_d2_A.v:45]
+WARNING: [Synth 8-6014] Unused sequential element Block_proc4_U0_ap_ready_count_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer.v:894]
+WARNING: [Synth 8-6014] Unused sequential element Loop_batch_loop_proc_U0_ap_ready_count_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer.v:902]
+INFO: [Synth 8-256] done synthesizing module 'conv_layer' (60#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer.v:12]
+INFO: [Synth 8-256] done synthesizing module 'pr_region_2_conv_layer_0_0' (61#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ip/pr_region_2_conv_layer_0_0/synth/pr_region_2_conv_layer_0_0.v:58]
+WARNING: [Synth 8-3331] design conv_layer_mul_32bkb has unconnected port reset
+WARNING: [Synth 8-3331] design conv_layer_mul_31ibs has unconnected port reset
+WARNING: [Synth 8-3331] design conv_layer_mul_32jbC has unconnected port reset
+WARNING: [Synth 8-3331] design conv_layer_mul_64g8j has unconnected port reset
+WARNING: [Synth 8-3331] design conv_layer_mul_32fYi has unconnected port reset
+WARNING: [Synth 8-3331] design conv_layer_mul_96hbi has unconnected port reset
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized9 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized9 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized9 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized9 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized9 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized89 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized89 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized89 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized89 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized89 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized87 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized87 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized87 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized87 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized87 has unconnected port SINIT
+WARNING: [Synth 8-3331] design compare_eq_im__parameterized3 has unconnected port CARRYS_OUT[0]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized13 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized13 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized13 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized13 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized13 has unconnected port SINIT
+WARNING: [Synth 8-3331] design compare_ne_im has unconnected port CARRYS_OUT[0]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized31 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized31 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized31 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized31 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized31 has unconnected port SINIT
+WARNING: [Synth 8-3331] design compare_eq_im__parameterized2 has unconnected port CARRYS_OUT[0]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized3 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized3 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized3 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized3 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized3 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized85 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized85 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized85 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized85 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized85 has unconnected port SINIT
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port m_axis_result_tuser[0]
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port m_axis_result_tlast
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port aclken
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port aresetn
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_a_tuser[0]
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_a_tlast
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_b_tuser[0]
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_b_tlast
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_c_tvalid
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_c_tdata[31]
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_c_tdata[30]
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_c_tdata[29]
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_c_tdata[28]
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_c_tdata[27]
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_c_tdata[26]
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_c_tdata[25]
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_c_tdata[24]
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_c_tdata[23]
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_c_tdata[22]
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_c_tdata[21]
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_c_tdata[20]
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_c_tdata[19]
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_c_tdata[18]
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_c_tdata[17]
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_c_tdata[16]
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_c_tdata[15]
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_c_tdata[14]
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_c_tdata[13]
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_c_tdata[12]
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_c_tdata[11]
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_c_tdata[10]
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_c_tdata[9]
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_c_tdata[8]
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_c_tdata[7]
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_c_tdata[6]
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_c_tdata[5]
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_c_tdata[4]
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_c_tdata[3]
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_c_tdata[2]
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_c_tdata[1]
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_c_tdata[0]
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_c_tuser[0]
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_c_tlast
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_operation_tdata[7]
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_operation_tdata[6]
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_operation_tdata[2]
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_operation_tdata[1]
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_operation_tdata[0]
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_operation_tuser[0]
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port s_axis_operation_tlast
+WARNING: [Synth 8-3331] design floating_point_v7_1_4_viv__parameterized3 has unconnected port m_axis_result_tready
+WARNING: [Synth 8-3331] design conv_layer_fcmp_3eOg has unconnected port reset
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DEC_OP_STATE[11]
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DEC_OP_STATE[10]
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DEC_OP_STATE[9]
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DEC_OP_STATE[8]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1358.750 ; gain = 137.500 ; free physical = 55071 ; free virtual = 58138
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1358.750 ; gain = 137.500 ; free physical = 54890 ; free virtual = 57941
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 154 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xcvu095-ffvc1517-2-e
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ip/pr_region_2_conv_layer_0_0/constraints/conv_layer_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ip/pr_region_2_conv_layer_0_0/constraints/conv_layer_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.runs/pr_region_2_conv_layer_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.runs/pr_region_2_conv_layer_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 9 instances were transformed.
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_M_DATA, DSP_MULTIPLIER, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 5 instances
+  FDE => FDRE: 4 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.66 ; elapsed = 00:00:00.20 . Memory (MB): peak = 1960.047 ; gain = 6.000 ; free physical = 52003 ; free virtual = 55054
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1960.047 ; gain = 738.797 ; free physical = 51528 ; free virtual = 54579
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcvu095-ffvc1517-2-e
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1960.047 ; gain = 738.797 ; free physical = 51521 ; free virtual = 54572
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.runs/pr_region_2_conv_layer_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 1960.047 ; gain = 738.797 ; free physical = 51519 ; free virtual = 54570
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'conv_layer_CTRL_BUS_s_axi'
+WARNING: [Synth 8-6014] Unused sequential element wstate_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_CTRL_BUS_s_axi.v:180]
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element throttl_cnt_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:721]
+WARNING: [Synth 8-6014] Unused sequential element mem_reg[0] was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:498]
+WARNING: [Synth 8-6014] Unused sequential element mem_reg[1] was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:498]
+WARNING: [Synth 8-6014] Unused sequential element mem_reg[2] was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:498]
+WARNING: [Synth 8-6014] Unused sequential element mem_reg[3] was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:498]
+WARNING: [Synth 8-6014] Unused sequential element mem_reg[4] was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:498]
+WARNING: [Synth 8-6014] Unused sequential element mem_reg[0] was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:498]
+WARNING: [Synth 8-6014] Unused sequential element mem_reg[1] was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:498]
+WARNING: [Synth 8-6014] Unused sequential element mem_reg[2] was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:498]
+WARNING: [Synth 8-6014] Unused sequential element mem_reg[3] was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:498]
+WARNING: [Synth 8-6014] Unused sequential element mem_reg[4] was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:498]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:589]
+WARNING: [Synth 8-6014] Unused sequential element usedw_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:587]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:485]
+WARNING: [Synth 8-6014] Unused sequential element pout_reg was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:483]
+WARNING: [Synth 8-6014] Unused sequential element mem_reg[0] was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:498]
+WARNING: [Synth 8-6014] Unused sequential element mem_reg[1] was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:498]
+WARNING: [Synth 8-6014] Unused sequential element mem_reg[2] was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:498]
+WARNING: [Synth 8-6014] Unused sequential element mem_reg[3] was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:498]
+WARNING: [Synth 8-6014] Unused sequential element mem_reg[4] was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:498]
+WARNING: [Synth 8-6014] Unused sequential element mem_reg[5] was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:498]
+WARNING: [Synth 8-6014] Unused sequential element mem_reg[6] was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:498]
+WARNING: [Synth 8-6014] Unused sequential element mem_reg[7] was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:498]
+WARNING: [Synth 8-6014] Unused sequential element mem_reg[8] was removed.  [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:498]
+INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mem_m_axi.v:589]
+INFO: [Synth 8-4471] merging register 'ap_return_3_preg_reg[63:62]' into 'ap_return_1_preg_reg[63:62]' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Block_proc4.v:717]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "det_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state_int_up" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "op_tdata" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'tmp_40_i_i_cast_mid2_2_reg_2074_reg[31:31]' into 'o_d_cast_i_i_mid1_reg_1713_reg[31:31]' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:2913]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3163]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3149]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3163]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3149]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3163]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3149]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5545] ROM "exitcond_flatten73_m_fu_543_p2" won't be mapped to RAM because address size (64) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "notrhs_fu_1481_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_full_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'conv_layer_CTRL_BUS_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1960.047 ; gain = 738.797 ; free physical = 50640 ; free virtual = 53692
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/Loop_batch_loop_proc_U0/conv_layer_fadd_3cud_U24/conv_layer_ap_fadd_7_full_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/Loop_batch_loop_proc_U0/conv_layer_fadd_3cud_U24/conv_layer_ap_fadd_7_full_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/Loop_batch_loop_proc_U0/conv_layer_fadd_3cud_U24/conv_layer_ap_fadd_7_full_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/Loop_batch_loop_proc_U0/conv_layer_fadd_3cud_U24/conv_layer_ap_fadd_7_full_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/Loop_batch_loop_proc_U0/conv_layer_fmul_3dEe_U25/conv_layer_ap_fmul_3_max_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/Loop_batch_loop_proc_U0/conv_layer_fmul_3dEe_U25/conv_layer_ap_fmul_3_max_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/Loop_batch_loop_proc_U0/conv_layer_fmul_3dEe_U25/conv_layer_ap_fmul_3_max_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/Loop_batch_loop_proc_U0/conv_layer_fmul_3dEe_U25/conv_layer_ap_fmul_3_max_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/conv_layer_ap_fcmp_0_no_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/conv_layer_ap_fcmp_0_no_dsp_32_u/U0/i_synth/DELAY_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/conv_layer_ap_fcmp_0_no_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/conv_layer_ap_fcmp_0_no_dsp_32_u/U0/i_synth/DELAY_UNDERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/conv_layer_ap_fcmp_0_no_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/conv_layer_ap_fcmp_0_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/conv_layer_ap_fcmp_0_no_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/conv_layer_ap_fcmp_0_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 768 (col length:192)
+BRAMs: 3456 (col length: RAMB18 192 RAMB36 96)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_32bkb.v:24]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_32bkb.v:24]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_32bkb.v:24]
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3163]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3155]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/Loop_batch_loop_proc.v:3149]
+INFO: [Synth 8-5544] ROM "data61" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data71" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "exitcond_flatten73_m_fu_543_p2" won't be mapped to RAM because address size (64) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "notrhs_fu_1481_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 8 [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_64g8j.v:26]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 12 [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_96hbi.v:26]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 8 [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_64g8j.v:26]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_32fYi.v:24]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_32bkb.v:24]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_32bkb.v:24]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_32bkb.v:24]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_32jbC.v:24]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_31ibs.v:24]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_32fYi.v:24]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_32jbC.v:24]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_32bkb.v:24]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_32bkb.v:24]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_32bkb.v:24]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_32bkb.v:24]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_32bkb.v:24]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_32bkb.v:24]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_32bkb.v:24]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_32bkb.v:24]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_32jbC.v:24]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_32bkb.v:24]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_31ibs.v:24]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_32jbC.v:24]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_32jbC.v:24]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_31ibs.v:24]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_32jbC.v:24]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_32bkb.v:24]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_31ibs.v:24]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_31ibs.v:24]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_32bkb.v:24]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_31ibs.v:24]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/9a0e/hdl/verilog/conv_layer_mul_32jbC.v:24]
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[95]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[93]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[94]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[92]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[91]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[90]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[89]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[88]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[87]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[86]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[85]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[84]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[83]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[82]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[81]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[80]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[79]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[78]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[77]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[76]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[75]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[74]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[73]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[72]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[71]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[70]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[69]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[68]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[67]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[66]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_read/rs_rreq/data_p2_reg[65]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/conv_layer_mem_m_axi_U/\bus_read/rs_rreq/data_p2_reg[65] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/conv_layer_mem_m_axi_U/\bus_read/rs_rreq/data_p2_reg[64] )
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[95]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[93]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[94]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[92]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[91]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[90]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[89]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[88]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[87]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[86]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[85]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[84]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[83]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[82]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[81]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[80]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[79]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[78]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[77]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[76]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[75]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[74]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[73]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[72]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[71]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[70]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[69]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[68]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[67]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[65]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[66]' (FDE) to 'inst/conv_layer_mem_m_axi_U/bus_write/rs_wreq/data_p2_reg[65]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/conv_layer_mem_m_axi_U/\bus_write/rs_wreq/data_p2_reg[65] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/conv_layer_mem_m_axi_U/\bus_write/rs_wreq/data_p2_reg[64] )
+INFO: [Synth 8-3886] merging instance 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/din1_buf1_reg[31]' (FDE) to 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/opcode_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/din1_buf1_reg[3]' (FDE) to 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/opcode_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/din1_buf1_reg[4]' (FDE) to 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/opcode_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/din1_buf1_reg[2]' (FDE) to 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/opcode_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/din1_buf1_reg[1]' (FDE) to 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/opcode_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/din1_buf1_reg[0]' (FDE) to 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/opcode_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/din1_buf1_reg[5]' (FDE) to 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/opcode_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/din1_buf1_reg[9]' (FDE) to 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/opcode_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/din1_buf1_reg[10]' (FDE) to 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/opcode_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/din1_buf1_reg[8]' (FDE) to 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/opcode_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/din1_buf1_reg[7]' (FDE) to 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/opcode_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/din1_buf1_reg[6]' (FDE) to 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/opcode_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/din1_buf1_reg[11]' (FDE) to 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/opcode_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/din1_buf1_reg[15]' (FDE) to 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/opcode_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/din1_buf1_reg[16]' (FDE) to 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/opcode_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/din1_buf1_reg[14]' (FDE) to 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/opcode_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/din1_buf1_reg[13]' (FDE) to 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/opcode_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/din1_buf1_reg[12]' (FDE) to 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/opcode_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/din1_buf1_reg[17]' (FDE) to 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/opcode_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/din1_buf1_reg[20]' (FDE) to 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/opcode_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/din1_buf1_reg[21]' (FDE) to 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/opcode_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/din1_buf1_reg[19]' (FDE) to 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/opcode_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/din1_buf1_reg[18]' (FDE) to 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/opcode_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/din1_buf1_reg[22]' (FDE) to 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/opcode_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/din1_buf1_reg[26]' (FDE) to 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/opcode_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/din1_buf1_reg[27]' (FDE) to 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/opcode_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/din1_buf1_reg[25]' (FDE) to 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/opcode_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/din1_buf1_reg[24]' (FDE) to 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/opcode_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/din1_buf1_reg[23]' (FDE) to 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/opcode_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/din1_buf1_reg[28]' (FDE) to 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/opcode_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/din1_buf1_reg[29]' (FDE) to 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/opcode_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/din1_buf1_reg[30]' (FDE) to 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/opcode_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/opcode_buf1_reg[4]' (FDE) to 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/opcode_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/opcode_buf1_reg[3]' (FDE) to 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/opcode_buf1_reg[0]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/Loop_batch_loop_proc_U0/\conv_layer_fcmp_3eOg_U26/opcode_buf1_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/opcode_buf1_reg[0]' (FDE) to 'inst/Loop_batch_loop_proc_U0/conv_layer_fcmp_3eOg_U26/opcode_buf1_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Loop_batch_loop_proc_U0/\conv_layer_fcmp_3eOg_U26/opcode_buf1_reg[2] )
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_read/start_addr_reg[0]' (FDRE) to 'inst/conv_layer_mem_m_axi_U/bus_read/start_addr_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/conv_layer_mem_m_axi_U/\bus_read/start_addr_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_write/start_addr_reg[0]' (FDRE) to 'inst/conv_layer_mem_m_axi_U/bus_write/start_addr_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/conv_layer_mem_m_axi_U/\bus_write/start_addr_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_write/buff_wdata/q_tmp_reg[32]' (FDRE) to 'inst/conv_layer_mem_m_axi_U/bus_write/buff_wdata/q_tmp_reg[33]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_write/buff_wdata/q_tmp_reg[33]' (FDRE) to 'inst/conv_layer_mem_m_axi_U/bus_write/buff_wdata/q_tmp_reg[34]'
+INFO: [Synth 8-3886] merging instance 'inst/conv_layer_mem_m_axi_U/bus_write/buff_wdata/q_tmp_reg[34]' (FDRE) to 'inst/conv_layer_mem_m_axi_U/bus_write/buff_wdata/q_tmp_reg[35]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Block_proc4_U0/\ap_return_1_preg_reg[63] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/Loop_batch_loop_proc_U0/ap_done_reg_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/conv_layer_mem_m_axi_U/\bus_read/could_multi_bursts.arlen_buf_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/conv_layer_mem_m_axi_U/\bus_write/could_multi_bursts.awlen_buf_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/conv_layer_mem_m_axi_U/\bus_write/could_multi_bursts.awlen_buf_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/conv_layer_mem_m_axi_U/\bus_read/rs_rreq/data_p1_reg[65] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/conv_layer_mem_m_axi_U/\bus_read/rs_rreq/data_p1_reg[64] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/conv_layer_mem_m_axi_U/\bus_write/rs_wreq/data_p1_reg[65] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/conv_layer_mem_m_axi_U/\bus_write/rs_wreq/data_p1_reg[64] )
+WARNING: [Synth 8-3332] Sequential element (bus_write/rs_wreq/data_p2_reg[65]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_write/rs_wreq/data_p2_reg[64]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_write/rs_wreq/data_p2_reg[63]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_write/rs_wreq/data_p2_reg[62]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_write/rs_wreq/data_p1_reg[65]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_write/rs_wreq/data_p1_reg[64]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_write/rs_wreq/data_p1_reg[63]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_write/rs_wreq/data_p1_reg[62]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_write/fifo_wreq/q_reg[63]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_write/fifo_wreq/q_reg[62]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_write/fifo_resp_to_user/q_reg[1]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_write/fifo_resp_to_user/q_reg[0]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_write/start_addr_reg[1]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_write/start_addr_buf_reg[1]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_write/start_addr_buf_reg[0]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_write/align_len_reg[1]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_write/align_len_reg[0]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_write/end_addr_buf_reg[1]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_write/end_addr_buf_reg[0]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_write/could_multi_bursts.awlen_buf_reg[7]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_write/could_multi_bursts.awlen_buf_reg[4]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_write/sect_addr_buf_reg[1]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_write/sect_addr_buf_reg[0]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_write/bresp_tmp_reg[1]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_write/bresp_tmp_reg[0]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_read/rs_rreq/data_p2_reg[65]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_read/rs_rreq/data_p2_reg[64]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_read/rs_rreq/data_p2_reg[63]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_read/rs_rreq/data_p2_reg[62]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_read/rs_rreq/data_p1_reg[65]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_read/rs_rreq/data_p1_reg[64]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_read/rs_rreq/data_p1_reg[63]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_read/rs_rreq/data_p1_reg[62]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_read/fifo_rreq/q_reg[63]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_read/fifo_rreq/q_reg[62]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_read/buff_rdata/q_tmp_reg[33]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_read/buff_rdata/q_tmp_reg[32]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_read/buff_rdata/dout_buf_reg[33]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_read/buff_rdata/dout_buf_reg[32]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_read/bus_equal_gen.resp_buf_reg[1]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_read/bus_equal_gen.resp_buf_reg[0]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_read/rs_rdata/data_p2_reg[33]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_read/rs_rdata/data_p2_reg[32]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_read/rs_rdata/data_p1_reg[33]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_read/rs_rdata/data_p1_reg[32]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_read/start_addr_reg[1]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_read/start_addr_buf_reg[1]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_read/start_addr_buf_reg[0]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_read/align_len_reg[1]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_read/align_len_reg[0]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_read/end_addr_buf_reg[1]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_read/end_addr_buf_reg[0]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_read/could_multi_bursts.arlen_buf_reg[7]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_read/sect_addr_buf_reg[1]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_read/sect_addr_buf_reg[0]) is unused and will be removed from module conv_layer_mem_m_axi.
+WARNING: [Synth 8-3332] Sequential element (conv_layer_mul_32bkb_U3/conv_layer_mul_32bkb_MulnS_0_U/a_reg0_reg[16]) is unused and will be removed from module Block_proc4.
+WARNING: [Synth 8-3332] Sequential element (conv_layer_mul_32bkb_U3/conv_layer_mul_32bkb_MulnS_0_U/a_reg0_reg[15]) is unused and will be removed from module Block_proc4.
+WARNING: [Synth 8-3332] Sequential element (conv_layer_mul_32bkb_U3/conv_layer_mul_32bkb_MulnS_0_U/a_reg0_reg[14]) is unused and will be removed from module Block_proc4.
+WARNING: [Synth 8-3332] Sequential element (conv_layer_mul_32bkb_U3/conv_layer_mul_32bkb_MulnS_0_U/a_reg0_reg[13]) is unused and will be removed from module Block_proc4.
+WARNING: [Synth 8-3332] Sequential element (conv_layer_mul_32bkb_U3/conv_layer_mul_32bkb_MulnS_0_U/a_reg0_reg[12]) is unused and will be removed from module Block_proc4.
+WARNING: [Synth 8-3332] Sequential element (conv_layer_mul_32bkb_U3/conv_layer_mul_32bkb_MulnS_0_U/a_reg0_reg[11]) is unused and will be removed from module Block_proc4.
+WARNING: [Synth 8-3332] Sequential element (conv_layer_mul_32bkb_U3/conv_layer_mul_32bkb_MulnS_0_U/a_reg0_reg[10]) is unused and will be removed from module Block_proc4.
+WARNING: [Synth 8-3332] Sequential element (conv_layer_mul_32bkb_U3/conv_layer_mul_32bkb_MulnS_0_U/a_reg0_reg[9]) is unused and will be removed from module Block_proc4.
+WARNING: [Synth 8-3332] Sequential element (conv_layer_mul_32bkb_U3/conv_layer_mul_32bkb_MulnS_0_U/a_reg0_reg[8]) is unused and will be removed from module Block_proc4.
+WARNING: [Synth 8-3332] Sequential element (conv_layer_mul_32bkb_U3/conv_layer_mul_32bkb_MulnS_0_U/a_reg0_reg[7]) is unused and will be removed from module Block_proc4.
+WARNING: [Synth 8-3332] Sequential element (conv_layer_mul_32bkb_U3/conv_layer_mul_32bkb_MulnS_0_U/a_reg0_reg[6]) is unused and will be removed from module Block_proc4.
+WARNING: [Synth 8-3332] Sequential element (conv_layer_mul_32bkb_U3/conv_layer_mul_32bkb_MulnS_0_U/a_reg0_reg[5]) is unused and will be removed from module Block_proc4.
+WARNING: [Synth 8-3332] Sequential element (conv_layer_mul_32bkb_U3/conv_layer_mul_32bkb_MulnS_0_U/a_reg0_reg[4]) is unused and will be removed from module Block_proc4.
+WARNING: [Synth 8-3332] Sequential element (conv_layer_mul_32bkb_U3/conv_layer_mul_32bkb_MulnS_0_U/a_reg0_reg[3]) is unused and will be removed from module Block_proc4.
+WARNING: [Synth 8-3332] Sequential element (conv_layer_mul_32bkb_U3/conv_layer_mul_32bkb_MulnS_0_U/a_reg0_reg[2]) is unused and will be removed from module Block_proc4.
+WARNING: [Synth 8-3332] Sequential element (conv_layer_mul_32bkb_U3/conv_layer_mul_32bkb_MulnS_0_U/a_reg0_reg[1]) is unused and will be removed from module Block_proc4.
+WARNING: [Synth 8-3332] Sequential element (conv_layer_mul_32bkb_U3/conv_layer_mul_32bkb_MulnS_0_U/a_reg0_reg[0]) is unused and will be removed from module Block_proc4.
+WARNING: [Synth 8-3332] Sequential element (conv_layer_mul_32bkb_U3/conv_layer_mul_32bkb_MulnS_0_U/buff0_reg[47]) is unused and will be removed from module Block_proc4.
+WARNING: [Synth 8-3332] Sequential element (conv_layer_mul_32bkb_U3/conv_layer_mul_32bkb_MulnS_0_U/buff0_reg[46]) is unused and will be removed from module Block_proc4.
+WARNING: [Synth 8-3332] Sequential element (conv_layer_mul_32bkb_U3/conv_layer_mul_32bkb_MulnS_0_U/buff0_reg[45]) is unused and will be removed from module Block_proc4.
+WARNING: [Synth 8-3332] Sequential element (conv_layer_mul_32bkb_U3/conv_layer_mul_32bkb_MulnS_0_U/buff0_reg[44]) is unused and will be removed from module Block_proc4.
+WARNING: [Synth 8-3332] Sequential element (conv_layer_mul_32bkb_U3/conv_layer_mul_32bkb_MulnS_0_U/buff0_reg[43]) is unused and will be removed from module Block_proc4.
+WARNING: [Synth 8-3332] Sequential element (conv_layer_mul_32bkb_U3/conv_layer_mul_32bkb_MulnS_0_U/buff0_reg[42]) is unused and will be removed from module Block_proc4.
+WARNING: [Synth 8-3332] Sequential element (conv_layer_mul_32bkb_U3/conv_layer_mul_32bkb_MulnS_0_U/buff0_reg[41]) is unused and will be removed from module Block_proc4.
+WARNING: [Synth 8-3332] Sequential element (conv_layer_mul_32bkb_U3/conv_layer_mul_32bkb_MulnS_0_U/buff0_reg[40]) is unused and will be removed from module Block_proc4.
+WARNING: [Synth 8-3332] Sequential element (conv_layer_mul_32bkb_U3/conv_layer_mul_32bkb_MulnS_0_U/buff0_reg[39]) is unused and will be removed from module Block_proc4.
+WARNING: [Synth 8-3332] Sequential element (conv_layer_mul_32bkb_U3/conv_layer_mul_32bkb_MulnS_0_U/buff0_reg[38]) is unused and will be removed from module Block_proc4.
+WARNING: [Synth 8-3332] Sequential element (conv_layer_mul_32bkb_U3/conv_layer_mul_32bkb_MulnS_0_U/buff0_reg[37]) is unused and will be removed from module Block_proc4.
+WARNING: [Synth 8-3332] Sequential element (conv_layer_mul_32bkb_U3/conv_layer_mul_32bkb_MulnS_0_U/buff0_reg[36]) is unused and will be removed from module Block_proc4.
+WARNING: [Synth 8-3332] Sequential element (conv_layer_mul_32bkb_U3/conv_layer_mul_32bkb_MulnS_0_U/buff0_reg[35]) is unused and will be removed from module Block_proc4.
+WARNING: [Synth 8-3332] Sequential element (conv_layer_mul_32bkb_U3/conv_layer_mul_32bkb_MulnS_0_U/buff0_reg[34]) is unused and will be removed from module Block_proc4.
+WARNING: [Synth 8-3332] Sequential element (conv_layer_mul_32bkb_U3/conv_layer_mul_32bkb_MulnS_0_U/buff0_reg[33]) is unused and will be removed from module Block_proc4.
+WARNING: [Synth 8-3332] Sequential element (conv_layer_mul_32bkb_U3/conv_layer_mul_32bkb_MulnS_0_U/buff0_reg[32]) is unused and will be removed from module Block_proc4.
+WARNING: [Synth 8-3332] Sequential element (conv_layer_mul_32bkb_U3/conv_layer_mul_32bkb_MulnS_0_U/buff0_reg[31]) is unused and will be removed from module Block_proc4.
+WARNING: [Synth 8-3332] Sequential element (conv_layer_mul_32bkb_U3/conv_layer_mul_32bkb_MulnS_0_U/buff0_reg[30]) is unused and will be removed from module Block_proc4.
+WARNING: [Synth 8-3332] Sequential element (conv_layer_mul_32bkb_U3/conv_layer_mul_32bkb_MulnS_0_U/buff0_reg[29]) is unused and will be removed from module Block_proc4.
+WARNING: [Synth 8-3332] Sequential element (conv_layer_mul_32bkb_U3/conv_layer_mul_32bkb_MulnS_0_U/buff0_reg[28]) is unused and will be removed from module Block_proc4.
+WARNING: [Synth 8-3332] Sequential element (conv_layer_mul_32bkb_U3/conv_layer_mul_32bkb_MulnS_0_U/buff0_reg[27]) is unused and will be removed from module Block_proc4.
+WARNING: [Synth 8-3332] Sequential element (conv_layer_mul_32bkb_U3/conv_layer_mul_32bkb_MulnS_0_U/buff0_reg[26]) is unused and will be removed from module Block_proc4.
+WARNING: [Synth 8-3332] Sequential element (conv_layer_mul_32bkb_U3/conv_layer_mul_32bkb_MulnS_0_U/buff0_reg[25]) is unused and will be removed from module Block_proc4.
+WARNING: [Synth 8-3332] Sequential element (conv_layer_mul_32bkb_U3/conv_layer_mul_32bkb_MulnS_0_U/buff0_reg[24]) is unused and will be removed from module Block_proc4.
+WARNING: [Synth 8-3332] Sequential element (conv_layer_mul_32bkb_U3/conv_layer_mul_32bkb_MulnS_0_U/buff0_reg[23]) is unused and will be removed from module Block_proc4.
+WARNING: [Synth 8-3332] Sequential element (conv_layer_mul_32bkb_U3/conv_layer_mul_32bkb_MulnS_0_U/buff0_reg[22]) is unused and will be removed from module Block_proc4.
+WARNING: [Synth 8-3332] Sequential element (conv_layer_mul_32bkb_U3/conv_layer_mul_32bkb_MulnS_0_U/buff0_reg[21]) is unused and will be removed from module Block_proc4.
+WARNING: [Synth 8-3332] Sequential element (conv_layer_mul_32bkb_U3/conv_layer_mul_32bkb_MulnS_0_U/buff0_reg[20]) is unused and will be removed from module Block_proc4.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/conv_layer_mem_m_axi_U/\bus_read/fifo_rreq/q_reg[65] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/conv_layer_mem_m_axi_U/\bus_write/fifo_wreq/q_reg[65] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/conv_layer_mem_m_axi_U/\bus_write/bus_equal_gen.fifo_burst/q_reg[5] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:10 ; elapsed = 00:01:14 . Memory (MB): peak = 1960.047 ; gain = 738.797 ; free physical = 56738 ; free virtual = 59798
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:24 ; elapsed = 00:01:27 . Memory (MB): peak = 2210.430 ; gain = 989.180 ; free physical = 58071 ; free virtual = 61147
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:35 ; elapsed = 00:01:39 . Memory (MB): peak = 2299.852 ; gain = 1078.602 ; free physical = 57572 ; free virtual = 60648
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\conv_layer_mem_m_axi_U/bus_read/could_multi_bursts.araddr_buf_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\conv_layer_mem_m_axi_U/bus_write/could_multi_bursts.awaddr_buf_reg[1] )
+INFO: [Synth 8-4480] The timing for the instance inst/conv_layer_mem_m_axi_U/bus_write/buff_wdata/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/conv_layer_mem_m_axi_U/bus_read/buff_rdata/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:46 ; elapsed = 00:01:50 . Memory (MB): peak = 2352.695 ; gain = 1131.445 ; free physical = 57208 ; free virtual = 60284
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:48 ; elapsed = 00:01:52 . Memory (MB): peak = 2352.695 ; gain = 1131.445 ; free physical = 57205 ; free virtual = 60281
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:48 ; elapsed = 00:01:52 . Memory (MB): peak = 2352.695 ; gain = 1131.445 ; free physical = 57164 ; free virtual = 60240
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:55 ; elapsed = 00:01:59 . Memory (MB): peak = 2352.695 ; gain = 1131.445 ; free physical = 59478 ; free virtual = 62562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:55 ; elapsed = 00:01:59 . Memory (MB): peak = 2352.695 ; gain = 1131.445 ; free physical = 59479 ; free virtual = 62562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:55 ; elapsed = 00:02:00 . Memory (MB): peak = 2352.695 ; gain = 1131.445 ; free physical = 59479 ; free virtual = 62562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:55 ; elapsed = 00:02:00 . Memory (MB): peak = 2352.695 ; gain = 1131.445 ; free physical = 59479 ; free virtual = 62562
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |CARRY8          |   451|
+|2     |DSP48E1         |     5|
+|3     |DSP_ALU         |    98|
+|4     |DSP_ALU_1       |    28|
+|5     |DSP_A_B_DATA_1  |    84|
+|6     |DSP_A_B_DATA_4  |    39|
+|7     |DSP_A_B_DATA_5  |     3|
+|8     |DSP_C_DATA      |   126|
+|9     |DSP_MULTIPLIER  |   126|
+|10    |DSP_M_DATA      |    98|
+|11    |DSP_M_DATA_1    |    28|
+|12    |DSP_OUTPUT      |    52|
+|13    |DSP_OUTPUT_1    |    74|
+|14    |DSP_PREADD      |   126|
+|15    |DSP_PREADD_DATA |   126|
+|16    |LUT1            |   695|
+|17    |LUT2            |  1871|
+|18    |LUT3            |  1818|
+|19    |LUT4            |  1203|
+|20    |LUT5            |   801|
+|21    |LUT6            |   937|
+|22    |MUXCY           |   105|
+|23    |MUXF7           |     4|
+|24    |MUXF8           |     1|
+|25    |RAMB18E2        |     2|
+|26    |SRL16E          |   392|
+|27    |XORCY           |    26|
+|28    |FDE             |     4|
+|29    |FDRE            |  9307|
+|30    |FDSE            |    40|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:55 ; elapsed = 00:02:00 . Memory (MB): peak = 2352.695 ; gain = 1131.445 ; free physical = 59479 ; free virtual = 62562
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4235 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:43 ; elapsed = 00:01:48 . Memory (MB): peak = 2352.695 ; gain = 530.148 ; free physical = 59504 ; free virtual = 62587
+Synthesis Optimization Complete : Time (s): cpu = 00:01:55 ; elapsed = 00:02:00 . Memory (MB): peak = 2352.703 ; gain = 1131.445 ; free physical = 59504 ; free virtual = 62587
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 717 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 154 instances were transformed.
+  (CARRY4) => CARRY8: 19 instances
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD_DATA, DSP_PREADD): 5 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD_DATA, DSP_PREADD): 126 instances
+  FDE => FDRE: 4 instances
+
+329 Infos, 361 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:04 ; elapsed = 00:02:09 . Memory (MB): peak = 2446.078 ; gain = 1283.258 ; free physical = 59580 ; free virtual = 62663
+INFO: [Common 17-1381] The checkpoint '/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.runs/pr_region_2_conv_layer_0_0_synth_1/pr_region_2_conv_layer_0_0.dcp' has been generated.

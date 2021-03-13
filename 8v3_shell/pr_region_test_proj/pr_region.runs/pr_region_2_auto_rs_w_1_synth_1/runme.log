@@ -1,0 +1,59 @@
+
+*** Running vivado
+    with args -log pr_region_2_auto_rs_w_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source pr_region_2_auto_rs_w_1.tcl
+
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source pr_region_2_auto_rs_w_1.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1239.258 ; gain = 21.000 ; free physical = 57715 ; free virtual = 60761
+INFO: [Synth 8-638] synthesizing module 'pr_region_2_auto_rs_w_1' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ip/pr_region_2_auto_rs_w_1/synth/pr_region_2_auto_rs_w_1.v:58]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_13_axi_register_slice' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/55c0/hdl/axi_register_slice_v2_1_vl_rfs.v:791]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (1#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_13_axic_register_slice' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/55c0/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_13_axic_register_slice' (2#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/55c0/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_13_axic_register_slice__parameterized0' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/55c0/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_13_axic_register_slice__parameterized0' (2#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/55c0/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_13_axic_register_slice__parameterized1' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/55c0/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_13_axic_register_slice__parameterized1' (2#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/55c0/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_13_axic_register_slice__parameterized2' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/55c0/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_13_axic_register_slice__parameterized2' (2#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/55c0/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (3#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_13_axi_register_slice' (4#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/55c0/hdl/axi_register_slice_v2_1_vl_rfs.v:791]
+INFO: [Synth 8-256] done synthesizing module 'pr_region_2_auto_rs_w_1' (5#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ip/pr_region_2_auto_rs_w_1/synth/pr_region_2_auto_rs_w_1.v:58]
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1279.758 ; gain = 61.500 ; free physical = 57450 ; free virtual = 60496
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1279.758 ; gain = 61.500 ; free physical = 57390 ; free virtual = 60437
+INFO: [Device 21-403] Loading part xcvu095-ffvc1517-2-e
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.04 . Memory (MB): peak = 1900.719 ; gain = 0.000 ; free physical = 54280 ; free virtual = 57331
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1900.719 ; gain = 682.461 ; free physical = 53217 ; free virtual = 56267
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1900.719 ; gain = 682.461 ; free physical = 53214 ; free virtual = 56265
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1900.719 ; gain = 682.461 ; free physical = 53205 ; free virtual = 56256
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1900.719 ; gain = 682.461 ; free physical = 52991 ; free virtual = 56042
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1900.719 ; gain = 682.461 ; free physical = 52785 ; free virtual = 55836
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 2063.797 ; gain = 845.539 ; free physical = 50705 ; free virtual = 53757
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 2073.812 ; gain = 855.555 ; free physical = 50669 ; free virtual = 53720
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 2085.828 ; gain = 867.570 ; free physical = 50677 ; free virtual = 53728
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2085.828 ; gain = 867.570 ; free physical = 50648 ; free virtual = 53700
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2085.828 ; gain = 867.570 ; free physical = 50644 ; free virtual = 53696
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2085.828 ; gain = 867.570 ; free physical = 50616 ; free virtual = 53668
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2085.828 ; gain = 867.570 ; free physical = 50614 ; free virtual = 53666
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2085.828 ; gain = 867.570 ; free physical = 50621 ; free virtual = 53673
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2085.828 ; gain = 867.570 ; free physical = 50625 ; free virtual = 53677
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     1|
+|2     |LUT2 |     1|
+|3     |LUT3 |   145|
+|4     |LUT5 |     2|
+|5     |FDRE |   294|
++------+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2085.828 ; gain = 867.570 ; free physical = 50624 ; free virtual = 53676
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 2144.477 ; gain = 984.648 ; free physical = 53628 ; free virtual = 56683

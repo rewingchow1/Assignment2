@@ -1,0 +1,165 @@
+
+
+================================================================
+== Vivado HLS Report for 'Block_proc4'
+================================================================
+* Date:           Sat Mar 13 01:17:01 2021
+
+* Version:        2017.2 (Build 1909853 on Thu Jun 15 18:55:24 MDT 2017)
+* Project:        fc_proj
+* Solution:       solution1
+* Product family: virtexu
+* Target device:  xcvu095-ffvc1517-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   4.00|      3.33|        0.50|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    2|    2|    2|    2|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+---------+--------+
+|       Name      | BRAM_18K| DSP48E|    FF   |   LUT  |
++-----------------+---------+-------+---------+--------+
+|DSP              |        -|      -|        -|       -|
+|Expression       |        -|      -|        0|      18|
+|FIFO             |        -|      -|        -|       -|
+|Instance         |        -|      4|      166|      49|
+|Memory           |        -|      -|        -|       -|
+|Multiplexer      |        -|      -|        -|      98|
+|Register         |        -|      -|      257|       -|
++-----------------+---------+-------+---------+--------+
+|Total            |        0|      4|      423|     165|
++-----------------+---------+-------+---------+--------+
+|Available        |     3456|    768|  1075200|  537600|
++-----------------+---------+-------+---------+--------+
+|Utilization (%)  |        0|   ~0  |    ~0   |   ~0   |
++-----------------+---------+-------+---------+--------+
+
++ Detail: 
+    * Instance: 
+    +-------------------------+----------------------+---------+-------+-----+----+
+    |         Instance        |        Module        | BRAM_18K| DSP48E|  FF | LUT|
+    +-------------------------+----------------------+---------+-------+-----+----+
+    |fc_layer_mul_32s_bkb_U1  |fc_layer_mul_32s_bkb  |        0|      4|  166|  49|
+    +-------------------------+----------------------+---------+-------+-----+----+
+    |Total                    |                      |        0|      4|  166|  49|
+    +-------------------------+----------------------+---------+-------+-----+----+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------+----------+-------+---+----+------------+------------+
+    |    Variable Name    | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------+----------+-------+---+----+------------+------------+
+    |tmp_4_out_fu_131_p2  |   icmp   |      0|  0|  16|          32|           1|
+    |ap_block_state1      |    or    |      0|  0|   2|           1|           1|
+    +---------------------+----------+-------+---+----+------------+------------+
+    |Total                |          |      0|  0|  18|          33|           2|
+    +---------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------+----+-----------+-----+-----------+
+    |          Name         | LUT| Input Size| Bits| Total Bits|
+    +-----------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm              |  17|          4|    1|          4|
+    |ap_done                |   9|          2|    1|          2|
+    |ap_return_0            |   9|          2|   64|        128|
+    |ap_return_1            |   9|          2|   62|        124|
+    |ap_return_2            |   9|          2|   64|        128|
+    |ap_return_3            |   9|          2|    1|          2|
+    |ap_return_4            |   9|          2|   62|        124|
+    |batch_size_out_blk_n   |   9|          2|    1|          2|
+    |num_inputs_out_blk_n   |   9|          2|    1|          2|
+    |num_outputs_out_blk_n  |   9|          2|    1|          2|
+    +-----------------------+----+-----------+-----+-----------+
+    |Total                  |  98|         22|  258|        518|
+    +-----------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +------------------+----+----+-----+-----------+
+    |       Name       | FF | LUT| Bits| Const Bits|
+    +------------------+----+----+-----+-----------+
+    |ap_CS_fsm         |   3|   0|    3|          0|
+    |ap_done_reg       |   1|   0|    1|          0|
+    |ap_return_0_preg  |  64|   0|   64|          0|
+    |ap_return_1_preg  |  62|   0|   64|          2|
+    |ap_return_2_preg  |  64|   0|   64|          0|
+    |ap_return_3_preg  |   1|   0|    1|          0|
+    |ap_return_4_preg  |  62|   0|   64|          2|
+    +------------------+----+----+-----+-----------+
+    |Total             | 257|   0|  261|          4|
+    +------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------+-----+-----+------------+-----------------+--------------+
+|        RTL Ports       | Dir | Bits|  Protocol  |  Source Object  |    C Type    |
++------------------------+-----+-----+------------+-----------------+--------------+
+|ap_clk                  |  in |    1| ap_ctrl_hs |   Block__proc4  | return value |
+|ap_rst                  |  in |    1| ap_ctrl_hs |   Block__proc4  | return value |
+|ap_start                |  in |    1| ap_ctrl_hs |   Block__proc4  | return value |
+|ap_done                 | out |    1| ap_ctrl_hs |   Block__proc4  | return value |
+|ap_continue             |  in |    1| ap_ctrl_hs |   Block__proc4  | return value |
+|ap_idle                 | out |    1| ap_ctrl_hs |   Block__proc4  | return value |
+|ap_ready                | out |    1| ap_ctrl_hs |   Block__proc4  | return value |
+|ap_return_0             | out |   64| ap_ctrl_hs |   Block__proc4  | return value |
+|ap_return_1             | out |   64| ap_ctrl_hs |   Block__proc4  | return value |
+|ap_return_2             | out |   64| ap_ctrl_hs |   Block__proc4  | return value |
+|ap_return_3             | out |    1| ap_ctrl_hs |   Block__proc4  | return value |
+|ap_return_4             | out |   64| ap_ctrl_hs |   Block__proc4  | return value |
+|num_outputs             |  in |   32|   ap_none  |   num_outputs   |    scalar    |
+|num_inputs              |  in |   32|   ap_none  |    num_inputs   |    scalar    |
+|input_offset            |  in |   32|   ap_none  |   input_offset  |    scalar    |
+|enable_relu             |  in |   32|   ap_none  |   enable_relu   |    scalar    |
+|output_offset           |  in |   32|   ap_none  |  output_offset  |    scalar    |
+|batch_size              |  in |   32|   ap_none  |    batch_size   |    scalar    |
+|num_outputs_out_din     | out |   32|   ap_fifo  | num_outputs_out |    pointer   |
+|num_outputs_out_full_n  |  in |    1|   ap_fifo  | num_outputs_out |    pointer   |
+|num_outputs_out_write   | out |    1|   ap_fifo  | num_outputs_out |    pointer   |
+|num_inputs_out_din      | out |   32|   ap_fifo  |  num_inputs_out |    pointer   |
+|num_inputs_out_full_n   |  in |    1|   ap_fifo  |  num_inputs_out |    pointer   |
+|num_inputs_out_write    | out |    1|   ap_fifo  |  num_inputs_out |    pointer   |
+|batch_size_out_din      | out |   32|   ap_fifo  |  batch_size_out |    pointer   |
+|batch_size_out_full_n   |  in |    1|   ap_fifo  |  batch_size_out |    pointer   |
+|batch_size_out_write    | out |    1|   ap_fifo  |  batch_size_out |    pointer   |
++------------------------+-----+-----+------------+-----------------+--------------+
+

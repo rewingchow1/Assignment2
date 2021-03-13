@@ -1,0 +1,353 @@
+
+
+================================================================
+== Vivado HLS Report for 'conv_layer'
+================================================================
+* Date:           Sat Mar 13 01:16:02 2021
+
+* Version:        2017.2 (Build 1909853 on Thu Jun 15 18:55:24 MDT 2017)
+* Project:        conv_proj
+* Solution:       solution1
+* Product family: virtexu
+* Target device:  xcvu095-ffvc1517-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |   4.00|      3.50|        0.50|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+------------+-----+----------------+----------+
+    |      Latency     |       Interval       | Pipeline |
+    | min |     max    | min |       max      |   Type   |
+    +-----+------------+-----+----------------+----------+
+    |   83|  2130706458|   78|  10666534502421| dataflow |
+    +-----+------------+-----+----------------+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 4
+* Pipeline: 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 4, States = { 1 2 3 4 }
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / true
+4 --> 
+* FSM state operations: 
+
+ <State 1>: 1.71ns
+ST_1: k_read (13)  [1/1] 1.00ns
+codeRepl:0  %k_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %k) nounwind
+
+ST_1: s_read (14)  [1/1] 1.00ns
+codeRepl:1  %s_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %s) nounwind
+
+ST_1: iy_read (15)  [1/1] 1.00ns
+codeRepl:2  %iy_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %iy) nounwind
+
+ST_1: ix_read (16)  [1/1] 1.00ns
+codeRepl:3  %ix_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %ix) nounwind
+
+ST_1: id_read (17)  [1/1] 1.00ns
+codeRepl:4  %id_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %id) nounwind
+
+ST_1: oy_read (18)  [1/1] 1.00ns
+codeRepl:5  %oy_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %oy) nounwind
+
+ST_1: ox_read (19)  [1/1] 1.00ns
+codeRepl:6  %ox_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %ox) nounwind
+
+ST_1: od_read (20)  [1/1] 1.00ns
+codeRepl:7  %od_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %od) nounwind
+
+ST_1: b_read (21)  [1/1] 1.00ns
+codeRepl:8  %b_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %b) nounwind
+
+ST_1: output_offset_read (22)  [1/1] 1.00ns
+codeRepl:9  %output_offset_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %output_offset) nounwind
+
+ST_1: input_offset_read (23)  [1/1] 1.00ns
+codeRepl:10  %input_offset_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %input_offset) nounwind
+
+ST_1: s_channel (24)  [1/1] 0.00ns
+codeRepl:11  %s_channel = alloca i32, align 4
+
+ST_1: iy_channel (25)  [1/1] 0.00ns
+codeRepl:12  %iy_channel = alloca i32, align 4
+
+ST_1: ix_channel (26)  [1/1] 0.00ns
+codeRepl:13  %ix_channel = alloca i32, align 4
+
+ST_1: oy_channel (27)  [1/1] 0.00ns
+codeRepl:14  %oy_channel = alloca i32, align 4
+
+ST_1: ox_channel (28)  [1/1] 0.00ns
+codeRepl:15  %ox_channel = alloca i32, align 4
+
+ST_1: b_channel (29)  [1/1] 0.00ns
+codeRepl:16  %b_channel = alloca i32, align 4
+
+ST_1: k_channel (30)  [1/1] 0.00ns
+codeRepl:17  %k_channel = alloca i32, align 4
+
+ST_1: od_channel (31)  [1/1] 0.00ns
+codeRepl:18  %od_channel = alloca i32, align 4
+
+ST_1: id_channel (32)  [1/1] 0.00ns
+codeRepl:19  %id_channel = alloca i32, align 4
+
+ST_1: call_ret (78)  [2/2] 0.71ns
+codeRepl:65  %call_ret = call fastcc { i64, i64, i64, i64 } @Block__proc4(i32 %id_read, i32 %od_read, i32 %k_read, i32 %input_offset_read, i32 %output_offset_read, i32 %b_read, i32 %ox_read, i32 %oy_read, i32 %ix_read, i32 %iy_read, i32 %s_read, i32* %id_channel, i32* %od_channel, i32* %k_channel, i32* %b_channel, i32* %ox_channel, i32* %oy_channel, i32* %ix_channel, i32* %iy_channel, i32* %s_channel) nounwind
+
+
+ <State 2>: 3.33ns
+ST_2: call_ret (78)  [1/2] 3.33ns
+codeRepl:65  %call_ret = call fastcc { i64, i64, i64, i64 } @Block__proc4(i32 %id_read, i32 %od_read, i32 %k_read, i32 %input_offset_read, i32 %output_offset_read, i32 %b_read, i32 %ox_read, i32 %oy_read, i32 %ix_read, i32 %iy_read, i32 %s_read, i32* %id_channel, i32* %od_channel, i32* %k_channel, i32* %b_channel, i32* %ox_channel, i32* %oy_channel, i32* %ix_channel, i32* %iy_channel, i32* %s_channel) nounwind
+
+ST_2: tmp_4_loc_channel (79)  [1/1] 0.00ns
+codeRepl:66  %tmp_4_loc_channel = extractvalue { i64, i64, i64, i64 } %call_ret, 0
+
+ST_2: tmp_3_loc_channel (80)  [1/1] 0.00ns
+codeRepl:67  %tmp_3_loc_channel = extractvalue { i64, i64, i64, i64 } %call_ret, 1
+
+ST_2: tmp_5_loc_channel (81)  [1/1] 0.00ns
+codeRepl:68  %tmp_5_loc_channel = extractvalue { i64, i64, i64, i64 } %call_ret, 2
+
+ST_2: tmp_7_loc_channel (82)  [1/1] 0.00ns
+codeRepl:69  %tmp_7_loc_channel = extractvalue { i64, i64, i64, i64 } %call_ret, 3
+
+
+ <State 3>: 2.28ns
+ST_3: StgValue_31 (83)  [2/2] 2.28ns
+codeRepl:70  call fastcc void @Loop_batch_loop_proc(i32* %b_channel, i32* %od_channel, i32* %id_channel, i32* %ix_channel, i32* %iy_channel, i32* %ox_channel, i32* %oy_channel, i64 %tmp_4_loc_channel, i64 %tmp_3_loc_channel, float* %mem, i32* %k_channel, i32* %s_channel, i64 %tmp_7_loc_channel, i64 %tmp_5_loc_channel) nounwind
+
+
+ <State 4>: 0.00ns
+ST_4: StgValue_32 (33)  [1/1] 0.00ns  loc: ../conv_test/conv_layer.cpp:20
+codeRepl:20  call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, [1 x i8]* @p_str) nounwind
+
+ST_4: StgValue_33 (34)  [1/1] 0.00ns
+codeRepl:21  call void (...)* @_ssdm_op_SpecBitsMap(float* %mem) nounwind, !map !13
+
+ST_4: StgValue_34 (35)  [1/1] 0.00ns
+codeRepl:22  call void (...)* @_ssdm_op_SpecBitsMap(i32 %input_offset) nounwind, !map !19
+
+ST_4: StgValue_35 (36)  [1/1] 0.00ns
+codeRepl:23  call void (...)* @_ssdm_op_SpecBitsMap(i32 %output_offset) nounwind, !map !25
+
+ST_4: StgValue_36 (37)  [1/1] 0.00ns
+codeRepl:24  call void (...)* @_ssdm_op_SpecBitsMap(i32 %b) nounwind, !map !29
+
+ST_4: StgValue_37 (38)  [1/1] 0.00ns
+codeRepl:25  call void (...)* @_ssdm_op_SpecBitsMap(i32 %od) nounwind, !map !33
+
+ST_4: StgValue_38 (39)  [1/1] 0.00ns
+codeRepl:26  call void (...)* @_ssdm_op_SpecBitsMap(i32 %ox) nounwind, !map !37
+
+ST_4: StgValue_39 (40)  [1/1] 0.00ns
+codeRepl:27  call void (...)* @_ssdm_op_SpecBitsMap(i32 %oy) nounwind, !map !41
+
+ST_4: StgValue_40 (41)  [1/1] 0.00ns
+codeRepl:28  call void (...)* @_ssdm_op_SpecBitsMap(i32 %id) nounwind, !map !45
+
+ST_4: StgValue_41 (42)  [1/1] 0.00ns
+codeRepl:29  call void (...)* @_ssdm_op_SpecBitsMap(i32 %ix) nounwind, !map !49
+
+ST_4: StgValue_42 (43)  [1/1] 0.00ns
+codeRepl:30  call void (...)* @_ssdm_op_SpecBitsMap(i32 %iy) nounwind, !map !53
+
+ST_4: StgValue_43 (44)  [1/1] 0.00ns
+codeRepl:31  call void (...)* @_ssdm_op_SpecBitsMap(i32 %s) nounwind, !map !57
+
+ST_4: StgValue_44 (45)  [1/1] 0.00ns
+codeRepl:32  call void (...)* @_ssdm_op_SpecBitsMap(i32 %k) nounwind, !map !61
+
+ST_4: StgValue_45 (46)  [1/1] 0.00ns
+codeRepl:33  call void (...)* @_ssdm_op_SpecTopModule([11 x i8]* @conv_layer_str) nounwind
+
+ST_4: StgValue_46 (47)  [1/1] 0.00ns  loc: ../conv_test/conv_layer.cpp:23
+codeRepl:34  call void (...)* @_ssdm_op_SpecInterface(float* %mem, [6 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i64 2147483648, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 16, i32 16, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
+
+ST_4: StgValue_47 (48)  [1/1] 0.00ns  loc: ../conv_test/conv_layer.cpp:25
+codeRepl:35  call void (...)* @_ssdm_op_SpecInterface(i32 %b, [10 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [9 x i8]* @p_str3, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
+
+ST_4: StgValue_48 (49)  [1/1] 0.00ns  loc: ../conv_test/conv_layer.cpp:26
+codeRepl:36  call void (...)* @_ssdm_op_SpecInterface(i32 %od, [10 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [9 x i8]* @p_str3, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
+
+ST_4: StgValue_49 (50)  [1/1] 0.00ns  loc: ../conv_test/conv_layer.cpp:27
+codeRepl:37  call void (...)* @_ssdm_op_SpecInterface(i32 %ox, [10 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [9 x i8]* @p_str3, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
+
+ST_4: StgValue_50 (51)  [1/1] 0.00ns  loc: ../conv_test/conv_layer.cpp:28
+codeRepl:38  call void (...)* @_ssdm_op_SpecInterface(i32 %oy, [10 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [9 x i8]* @p_str3, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
+
+ST_4: StgValue_51 (52)  [1/1] 0.00ns  loc: ../conv_test/conv_layer.cpp:29
+codeRepl:39  call void (...)* @_ssdm_op_SpecInterface(i32 %id, [10 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [9 x i8]* @p_str3, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
+
+ST_4: StgValue_52 (53)  [1/1] 0.00ns  loc: ../conv_test/conv_layer.cpp:30
+codeRepl:40  call void (...)* @_ssdm_op_SpecInterface(i32 %ix, [10 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [9 x i8]* @p_str3, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
+
+ST_4: StgValue_53 (54)  [1/1] 0.00ns  loc: ../conv_test/conv_layer.cpp:31
+codeRepl:41  call void (...)* @_ssdm_op_SpecInterface(i32 %iy, [10 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [9 x i8]* @p_str3, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
+
+ST_4: StgValue_54 (55)  [1/1] 0.00ns  loc: ../conv_test/conv_layer.cpp:32
+codeRepl:42  call void (...)* @_ssdm_op_SpecInterface(i32 %s, [10 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [9 x i8]* @p_str3, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
+
+ST_4: StgValue_55 (56)  [1/1] 0.00ns  loc: ../conv_test/conv_layer.cpp:33
+codeRepl:43  call void (...)* @_ssdm_op_SpecInterface(i32 %k, [10 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [9 x i8]* @p_str3, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
+
+ST_4: StgValue_56 (57)  [1/1] 0.00ns  loc: ../conv_test/conv_layer.cpp:34
+codeRepl:44  call void (...)* @_ssdm_op_SpecInterface(i32 %input_offset, [10 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
+
+ST_4: StgValue_57 (58)  [1/1] 0.00ns  loc: ../conv_test/conv_layer.cpp:35
+codeRepl:45  call void (...)* @_ssdm_op_SpecInterface(i32 %output_offset, [10 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
+
+ST_4: StgValue_58 (59)  [1/1] 0.00ns  loc: ../conv_test/conv_layer.cpp:36
+codeRepl:46  call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [9 x i8]* @p_str3, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str) nounwind
+
+ST_4: empty (60)  [1/1] 0.00ns
+codeRepl:47  %empty = call i32 (...)* @_ssdm_op_SpecChannel([11 x i8]* @id_channel_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 1, i32 0, i32* %id_channel, i32* %id_channel) nounwind
+
+ST_4: StgValue_60 (61)  [1/1] 0.00ns
+codeRepl:48  call void (...)* @_ssdm_op_SpecInterface(i32* %id_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_4: empty_5 (62)  [1/1] 0.00ns
+codeRepl:49  %empty_5 = call i32 (...)* @_ssdm_op_SpecChannel([11 x i8]* @od_channel_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 1, i32 0, i32* %od_channel, i32* %od_channel) nounwind
+
+ST_4: StgValue_62 (63)  [1/1] 0.00ns
+codeRepl:50  call void (...)* @_ssdm_op_SpecInterface(i32* %od_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_4: empty_6 (64)  [1/1] 0.00ns
+codeRepl:51  %empty_6 = call i32 (...)* @_ssdm_op_SpecChannel([10 x i8]* @k_channel_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 1, i32 0, i32* %k_channel, i32* %k_channel) nounwind
+
+ST_4: StgValue_64 (65)  [1/1] 0.00ns
+codeRepl:52  call void (...)* @_ssdm_op_SpecInterface(i32* %k_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_4: empty_7 (66)  [1/1] 0.00ns
+codeRepl:53  %empty_7 = call i32 (...)* @_ssdm_op_SpecChannel([10 x i8]* @b_channel_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 1, i32 0, i32* %b_channel, i32* %b_channel) nounwind
+
+ST_4: StgValue_66 (67)  [1/1] 0.00ns
+codeRepl:54  call void (...)* @_ssdm_op_SpecInterface(i32* %b_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_4: empty_8 (68)  [1/1] 0.00ns
+codeRepl:55  %empty_8 = call i32 (...)* @_ssdm_op_SpecChannel([11 x i8]* @ox_channel_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 1, i32 0, i32* %ox_channel, i32* %ox_channel) nounwind
+
+ST_4: StgValue_68 (69)  [1/1] 0.00ns
+codeRepl:56  call void (...)* @_ssdm_op_SpecInterface(i32* %ox_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_4: empty_9 (70)  [1/1] 0.00ns
+codeRepl:57  %empty_9 = call i32 (...)* @_ssdm_op_SpecChannel([11 x i8]* @oy_channel_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 1, i32 0, i32* %oy_channel, i32* %oy_channel) nounwind
+
+ST_4: StgValue_70 (71)  [1/1] 0.00ns
+codeRepl:58  call void (...)* @_ssdm_op_SpecInterface(i32* %oy_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_4: empty_10 (72)  [1/1] 0.00ns
+codeRepl:59  %empty_10 = call i32 (...)* @_ssdm_op_SpecChannel([11 x i8]* @ix_channel_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 1, i32 0, i32* %ix_channel, i32* %ix_channel) nounwind
+
+ST_4: StgValue_72 (73)  [1/1] 0.00ns
+codeRepl:60  call void (...)* @_ssdm_op_SpecInterface(i32* %ix_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_4: empty_11 (74)  [1/1] 0.00ns
+codeRepl:61  %empty_11 = call i32 (...)* @_ssdm_op_SpecChannel([11 x i8]* @iy_channel_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 1, i32 0, i32* %iy_channel, i32* %iy_channel) nounwind
+
+ST_4: StgValue_74 (75)  [1/1] 0.00ns
+codeRepl:62  call void (...)* @_ssdm_op_SpecInterface(i32* %iy_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_4: empty_12 (76)  [1/1] 0.00ns
+codeRepl:63  %empty_12 = call i32 (...)* @_ssdm_op_SpecChannel([10 x i8]* @s_channel_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 1, i32 0, i32* %s_channel, i32* %s_channel) nounwind
+
+ST_4: StgValue_76 (77)  [1/1] 0.00ns
+codeRepl:64  call void (...)* @_ssdm_op_SpecInterface(i32* %s_channel, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)
+
+ST_4: StgValue_77 (83)  [1/2] 0.00ns
+codeRepl:70  call fastcc void @Loop_batch_loop_proc(i32* %b_channel, i32* %od_channel, i32* %id_channel, i32* %ix_channel, i32* %iy_channel, i32* %ox_channel, i32* %oy_channel, i64 %tmp_4_loc_channel, i64 %tmp_3_loc_channel, float* %mem, i32* %k_channel, i32* %s_channel, i64 %tmp_7_loc_channel, i64 %tmp_5_loc_channel) nounwind
+
+ST_4: StgValue_78 (84)  [1/1] 0.00ns  loc: ../conv_test/conv_layer.cpp:95
+codeRepl:71  ret void
+
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 4ns, clock uncertainty: 0.5ns.
+
+ <State 1>: 1.71ns
+The critical path consists of the following:
+	s_axi read on port 'k' [13]  (1 ns)
+	'call' operation ('call_ret') to 'Block__proc4' [78]  (0.706 ns)
+
+ <State 2>: 3.33ns
+The critical path consists of the following:
+	'call' operation ('call_ret') to 'Block__proc4' [78]  (3.33 ns)
+
+ <State 3>: 2.28ns
+The critical path consists of the following:
+	'call' operation to 'Loop_batch_loop_proc' [83]  (2.28 ns)
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

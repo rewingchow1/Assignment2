@@ -1,0 +1,218 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'fc_layer'" level="0">
+<item name = "Date">Sat Mar 13 01:17:01 2021
+</item>
+<item name = "Version">2017.2 (Build 1909853 on Thu Jun 15 18:55:24 MDT 2017)</item>
+<item name = "Project">fc_proj</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">virtexu</item>
+<item name = "Target device">xcvu095-ffvc1517-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">4.00, 3.50, 0.50</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">49, 659857415, 47, 9249792005, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="Loop_batch_loop_proc_U0">Loop_batch_loop_proc, 46, 9249792004, 46, 9249792004, none</column>
+<column name="Block_proc4_U0">Block_proc4, 2, 2, 2, 2, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="DSP">-, -, -, -</column>
+<column name="Expression">-, -, 44, 66</column>
+<column name="FIFO">0, -, 0, 8</column>
+<column name="Instance">2, 25, 5210, 3230</column>
+<column name="Memory">-, -, -, -</column>
+<column name="Multiplexer">-, -, -, 81</column>
+<column name="Register">-, -, 11, -</column>
+<specialColumn name="Available">3456, 768, 1075200, 537600</specialColumn>
+<specialColumn name="Utilization (%)">~0, 3, ~0, ~0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="Block_proc4_U0">Block_proc4, 0, 4, 423, 165</column>
+<column name="Loop_batch_loop_proc_U0">Loop_batch_loop_proc, 0, 21, 4011, 2061</column>
+<column name="fc_layer_CTRL_BUS_s_axi_U">fc_layer_CTRL_BUS_s_axi, 0, 0, 264, 424</column>
+<column name="fc_layer_mem_m_axi_U">fc_layer_mem_m_axi, 2, 0, 512, 580</column>
+</table>
+</item>
+<item name = "DSP48"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+<column name="batch_size_channel_U">0, 0, 1, 1, 32, 32</column>
+<column name="num_inputs_channel_U">0, 0, 1, 1, 32, 32</column>
+<column name="num_outputs_channel_U">0, 0, 1, 1, 32, 32</column>
+<column name="tmp_1_loc_channel_U">0, 0, 1, 2, 64, 128</column>
+<column name="tmp_2_loc_channel_U">0, 0, 1, 2, 64, 128</column>
+<column name="tmp_3_loc_channel_U">0, 0, 1, 2, 64, 128</column>
+<column name="tmp_4_loc_channel_U">0, 0, 1, 2, 1, 2</column>
+<column name="tmp_6_loc_channel_U">0, 0, 1, 2, 64, 128</column>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="Block_proc4_U0_ap_ready_count">+, 0, 11, 8, 2, 1</column>
+<column name="Loop_batch_loop_proc_U0_ap_ready_count">+, 0, 11, 8, 2, 1</column>
+<column name="Block_proc4_U0_ap_ready_count">-, 0, 11, 8, 2, 1</column>
+<column name="Loop_batch_loop_proc_U0_ap_ready_count">-, 0, 11, 8, 2, 1</column>
+<column name="Block_proc4_U0_ap_continue">and, 0, 0, 2, 1, 1</column>
+<column name="Block_proc4_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="Loop_batch_loop_proc_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_tmp_1_loc_channel">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_tmp_2_loc_channel">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_tmp_3_loc_channel">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_tmp_4_loc_channel">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_tmp_6_loc_channel">and, 0, 0, 2, 1, 1</column>
+<column name="ap_idle">and, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_ready">and, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_Block_proc4_U0_ap_ready">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_Loop_batch_loop_proc_U0_ap_ready">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_tmp_1_loc_channel">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_tmp_2_loc_channel">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_tmp_3_loc_channel">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_tmp_4_loc_channel">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_tmp_6_loc_channel">or, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="Block_proc4_U0_ap_ready_count">9, 2, 2, 4</column>
+<column name="Loop_batch_loop_proc_U0_ap_ready_count">9, 2, 2, 4</column>
+<column name="ap_sync_reg_Block_proc4_U0_ap_ready">9, 2, 1, 2</column>
+<column name="ap_sync_reg_Loop_batch_loop_proc_U0_ap_ready">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_tmp_1_loc_channel">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_tmp_2_loc_channel">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_tmp_3_loc_channel">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_tmp_4_loc_channel">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_tmp_6_loc_channel">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="Block_proc4_U0_ap_ready_count">2, 0, 2, 0</column>
+<column name="Loop_batch_loop_proc_U0_ap_ready_count">2, 0, 2, 0</column>
+<column name="ap_sync_reg_Block_proc4_U0_ap_ready">1, 0, 1, 0</column>
+<column name="ap_sync_reg_Loop_batch_loop_proc_U0_ap_ready">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_tmp_1_loc_channel">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_tmp_2_loc_channel">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_tmp_3_loc_channel">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_tmp_4_loc_channel">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_tmp_6_loc_channel">1, 0, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="s_axi_CTRL_BUS_AWVALID">in, 1, s_axi, CTRL_BUS, scalar</column>
+<column name="s_axi_CTRL_BUS_AWREADY">out, 1, s_axi, CTRL_BUS, scalar</column>
+<column name="s_axi_CTRL_BUS_AWADDR">in, 6, s_axi, CTRL_BUS, scalar</column>
+<column name="s_axi_CTRL_BUS_WVALID">in, 1, s_axi, CTRL_BUS, scalar</column>
+<column name="s_axi_CTRL_BUS_WREADY">out, 1, s_axi, CTRL_BUS, scalar</column>
+<column name="s_axi_CTRL_BUS_WDATA">in, 32, s_axi, CTRL_BUS, scalar</column>
+<column name="s_axi_CTRL_BUS_WSTRB">in, 4, s_axi, CTRL_BUS, scalar</column>
+<column name="s_axi_CTRL_BUS_ARVALID">in, 1, s_axi, CTRL_BUS, scalar</column>
+<column name="s_axi_CTRL_BUS_ARREADY">out, 1, s_axi, CTRL_BUS, scalar</column>
+<column name="s_axi_CTRL_BUS_ARADDR">in, 6, s_axi, CTRL_BUS, scalar</column>
+<column name="s_axi_CTRL_BUS_RVALID">out, 1, s_axi, CTRL_BUS, scalar</column>
+<column name="s_axi_CTRL_BUS_RREADY">in, 1, s_axi, CTRL_BUS, scalar</column>
+<column name="s_axi_CTRL_BUS_RDATA">out, 32, s_axi, CTRL_BUS, scalar</column>
+<column name="s_axi_CTRL_BUS_RRESP">out, 2, s_axi, CTRL_BUS, scalar</column>
+<column name="s_axi_CTRL_BUS_BVALID">out, 1, s_axi, CTRL_BUS, scalar</column>
+<column name="s_axi_CTRL_BUS_BREADY">in, 1, s_axi, CTRL_BUS, scalar</column>
+<column name="s_axi_CTRL_BUS_BRESP">out, 2, s_axi, CTRL_BUS, scalar</column>
+<column name="ap_clk">in, 1, ap_ctrl_hs, fc_layer, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_hs, fc_layer, return value</column>
+<column name="interrupt">out, 1, ap_ctrl_hs, fc_layer, return value</column>
+<column name="m_axi_mem_AWVALID">out, 1, m_axi, mem, pointer</column>
+<column name="m_axi_mem_AWREADY">in, 1, m_axi, mem, pointer</column>
+<column name="m_axi_mem_AWADDR">out, 64, m_axi, mem, pointer</column>
+<column name="m_axi_mem_AWID">out, 1, m_axi, mem, pointer</column>
+<column name="m_axi_mem_AWLEN">out, 8, m_axi, mem, pointer</column>
+<column name="m_axi_mem_AWSIZE">out, 3, m_axi, mem, pointer</column>
+<column name="m_axi_mem_AWBURST">out, 2, m_axi, mem, pointer</column>
+<column name="m_axi_mem_AWLOCK">out, 2, m_axi, mem, pointer</column>
+<column name="m_axi_mem_AWCACHE">out, 4, m_axi, mem, pointer</column>
+<column name="m_axi_mem_AWPROT">out, 3, m_axi, mem, pointer</column>
+<column name="m_axi_mem_AWQOS">out, 4, m_axi, mem, pointer</column>
+<column name="m_axi_mem_AWREGION">out, 4, m_axi, mem, pointer</column>
+<column name="m_axi_mem_AWUSER">out, 1, m_axi, mem, pointer</column>
+<column name="m_axi_mem_WVALID">out, 1, m_axi, mem, pointer</column>
+<column name="m_axi_mem_WREADY">in, 1, m_axi, mem, pointer</column>
+<column name="m_axi_mem_WDATA">out, 32, m_axi, mem, pointer</column>
+<column name="m_axi_mem_WSTRB">out, 4, m_axi, mem, pointer</column>
+<column name="m_axi_mem_WLAST">out, 1, m_axi, mem, pointer</column>
+<column name="m_axi_mem_WID">out, 1, m_axi, mem, pointer</column>
+<column name="m_axi_mem_WUSER">out, 1, m_axi, mem, pointer</column>
+<column name="m_axi_mem_ARVALID">out, 1, m_axi, mem, pointer</column>
+<column name="m_axi_mem_ARREADY">in, 1, m_axi, mem, pointer</column>
+<column name="m_axi_mem_ARADDR">out, 64, m_axi, mem, pointer</column>
+<column name="m_axi_mem_ARID">out, 1, m_axi, mem, pointer</column>
+<column name="m_axi_mem_ARLEN">out, 8, m_axi, mem, pointer</column>
+<column name="m_axi_mem_ARSIZE">out, 3, m_axi, mem, pointer</column>
+<column name="m_axi_mem_ARBURST">out, 2, m_axi, mem, pointer</column>
+<column name="m_axi_mem_ARLOCK">out, 2, m_axi, mem, pointer</column>
+<column name="m_axi_mem_ARCACHE">out, 4, m_axi, mem, pointer</column>
+<column name="m_axi_mem_ARPROT">out, 3, m_axi, mem, pointer</column>
+<column name="m_axi_mem_ARQOS">out, 4, m_axi, mem, pointer</column>
+<column name="m_axi_mem_ARREGION">out, 4, m_axi, mem, pointer</column>
+<column name="m_axi_mem_ARUSER">out, 1, m_axi, mem, pointer</column>
+<column name="m_axi_mem_RVALID">in, 1, m_axi, mem, pointer</column>
+<column name="m_axi_mem_RREADY">out, 1, m_axi, mem, pointer</column>
+<column name="m_axi_mem_RDATA">in, 32, m_axi, mem, pointer</column>
+<column name="m_axi_mem_RLAST">in, 1, m_axi, mem, pointer</column>
+<column name="m_axi_mem_RID">in, 1, m_axi, mem, pointer</column>
+<column name="m_axi_mem_RUSER">in, 1, m_axi, mem, pointer</column>
+<column name="m_axi_mem_RRESP">in, 2, m_axi, mem, pointer</column>
+<column name="m_axi_mem_BVALID">in, 1, m_axi, mem, pointer</column>
+<column name="m_axi_mem_BREADY">out, 1, m_axi, mem, pointer</column>
+<column name="m_axi_mem_BRESP">in, 2, m_axi, mem, pointer</column>
+<column name="m_axi_mem_BID">in, 1, m_axi, mem, pointer</column>
+<column name="m_axi_mem_BUSER">in, 1, m_axi, mem, pointer</column>
+</table>
+</item>
+</section>
+</profile>

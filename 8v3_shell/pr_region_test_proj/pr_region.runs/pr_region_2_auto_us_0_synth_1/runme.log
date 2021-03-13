@@ -1,0 +1,88 @@
+
+*** Running vivado
+    with args -log pr_region_2_auto_us_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source pr_region_2_auto_us_0.tcl
+
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source pr_region_2_auto_us_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1249.254 ; gain = 28.000 ; free physical = 57711 ; free virtual = 60758
+INFO: [Synth 8-638] synthesizing module 'pr_region_2_auto_us_0' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ip/pr_region_2_auto_us_0/synth/pr_region_2_auto_us_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_13_top' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/3bde/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:14450]
+INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_13_axi_upsizer' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/3bde/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:7038]
+INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_13_w_upsizer' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/3bde/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:5563]
+INFO: [Synth 8-256] done synthesizing module 'axi_dwidth_converter_v2_1_13_w_upsizer' (1#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/3bde/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:5563]
+INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_13_a_upsizer' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/3bde/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:3603]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_command_fifo' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:655]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_command_fifo' (2#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/f9c1/hdl/generic_baseblocks_v2_1_vl_rfs.v:655]
+INFO: [Synth 8-256] done synthesizing module 'axi_dwidth_converter_v2_1_13_a_upsizer' (3#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/3bde/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:3603]
+INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_13_r_upsizer' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/3bde/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:4653]
+INFO: [Synth 8-256] done synthesizing module 'axi_dwidth_converter_v2_1_13_r_upsizer' (4#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/3bde/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:4653]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_13_axi_register_slice' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/55c0/hdl/axi_register_slice_v2_1_vl_rfs.v:791]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (5#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_13_axic_register_slice' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/55c0/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_13_axic_register_slice' (6#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/55c0/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_13_axic_register_slice__parameterized0' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/55c0/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_13_axic_register_slice__parameterized0' (6#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/55c0/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_13_axic_register_slice__parameterized1' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/55c0/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_13_axic_register_slice__parameterized1' (6#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/55c0/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_13_axic_register_slice__parameterized2' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/55c0/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_13_axic_register_slice__parameterized2' (6#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/55c0/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (7#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_13_axi_register_slice' (8#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/55c0/hdl/axi_register_slice_v2_1_vl_rfs.v:791]
+INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_13_a_upsizer__parameterized0' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/3bde/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:3603]
+INFO: [Synth 8-256] done synthesizing module 'axi_dwidth_converter_v2_1_13_a_upsizer__parameterized0' (8#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/3bde/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:3603]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_13_axi_register_slice__parameterized0' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/55c0/hdl/axi_register_slice_v2_1_vl_rfs.v:791]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' (8#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_13_axic_register_slice__parameterized3' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/55c0/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_13_axic_register_slice__parameterized3' (8#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/55c0/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_13_axic_register_slice__parameterized4' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/55c0/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_13_axic_register_slice__parameterized4' (8#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/55c0/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' (8#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_13_axi_register_slice__parameterized0' (8#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/55c0/hdl/axi_register_slice_v2_1_vl_rfs.v:791]
+INFO: [Synth 8-256] done synthesizing module 'axi_dwidth_converter_v2_1_13_axi_upsizer' (9#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/3bde/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:7038]
+INFO: [Synth 8-256] done synthesizing module 'axi_dwidth_converter_v2_1_13_top' (10#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/3bde/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:14450]
+INFO: [Synth 8-256] done synthesizing module 'pr_region_2_auto_us_0' (11#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_optimized/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ip/pr_region_2_auto_us_0/synth/pr_region_2_auto_us_0.v:58]
+Finished RTL Elaboration : Time (s): cpu = 00:01:08 ; elapsed = 00:01:09 . Memory (MB): peak = 1377.754 ; gain = 156.500 ; free physical = 57532 ; free virtual = 60592
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:09 ; elapsed = 00:01:09 . Memory (MB): peak = 1377.754 ; gain = 156.500 ; free physical = 57520 ; free virtual = 60580
+INFO: [Device 21-403] Loading part xcvu095-ffvc1517-2-e
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.08 . Memory (MB): peak = 1923.777 ; gain = 0.000 ; free physical = 56228 ; free virtual = 59289
+Finished Constraint Validation : Time (s): cpu = 00:01:23 ; elapsed = 00:01:23 . Memory (MB): peak = 1923.777 ; gain = 702.523 ; free physical = 56143 ; free virtual = 59210
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:23 ; elapsed = 00:01:23 . Memory (MB): peak = 1923.777 ; gain = 702.523 ; free physical = 56143 ; free virtual = 59209
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:23 ; elapsed = 00:01:23 . Memory (MB): peak = 1923.777 ; gain = 702.523 ; free physical = 56142 ; free virtual = 59209
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:24 ; elapsed = 00:01:24 . Memory (MB): peak = 1923.777 ; gain = 702.523 ; free physical = 56124 ; free virtual = 59194
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:30 ; elapsed = 00:01:31 . Memory (MB): peak = 1923.777 ; gain = 702.523 ; free physical = 58041 ; free virtual = 61117
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:42 ; elapsed = 00:01:44 . Memory (MB): peak = 2103.855 ; gain = 882.602 ; free physical = 57332 ; free virtual = 60408
+Finished Timing Optimization : Time (s): cpu = 00:01:49 ; elapsed = 00:01:50 . Memory (MB): peak = 2185.254 ; gain = 964.000 ; free physical = 57236 ; free virtual = 60312
+Finished Technology Mapping : Time (s): cpu = 00:01:49 ; elapsed = 00:01:51 . Memory (MB): peak = 2193.262 ; gain = 972.008 ; free physical = 57224 ; free virtual = 60300
+Finished IO Insertion : Time (s): cpu = 00:01:50 ; elapsed = 00:01:51 . Memory (MB): peak = 2193.262 ; gain = 972.008 ; free physical = 57231 ; free virtual = 60307
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:50 ; elapsed = 00:01:51 . Memory (MB): peak = 2193.262 ; gain = 972.008 ; free physical = 57231 ; free virtual = 60307
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:50 ; elapsed = 00:01:52 . Memory (MB): peak = 2193.262 ; gain = 972.008 ; free physical = 57219 ; free virtual = 60295
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:50 ; elapsed = 00:01:52 . Memory (MB): peak = 2193.262 ; gain = 972.008 ; free physical = 57219 ; free virtual = 60295
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:50 ; elapsed = 00:01:52 . Memory (MB): peak = 2193.262 ; gain = 972.008 ; free physical = 57212 ; free virtual = 60288
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:50 ; elapsed = 00:01:52 . Memory (MB): peak = 2193.262 ; gain = 972.008 ; free physical = 57212 ; free virtual = 60288
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY8  |     4|
+|2     |LUT1    |     8|
+|3     |LUT2    |    32|
+|4     |LUT3    |   175|
+|5     |LUT4    |   123|
+|6     |LUT5    |   330|
+|7     |LUT6    |   234|
+|8     |SRLC32E |    66|
+|9     |FDRE    |   995|
+|10    |FDSE    |     4|
++------+--------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:50 ; elapsed = 00:01:52 . Memory (MB): peak = 2193.262 ; gain = 972.008 ; free physical = 57212 ; free virtual = 60288
+synth_design: Time (s): cpu = 00:01:53 ; elapsed = 00:01:54 . Memory (MB): peak = 2233.910 ; gain = 1071.086 ; free physical = 57302 ; free virtual = 60381

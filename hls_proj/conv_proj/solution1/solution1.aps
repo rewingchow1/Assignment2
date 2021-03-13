@@ -1,0 +1,29 @@
+<AutoPilot:solution xmlns:AutoPilot="com.autoesl.autopilot.solution">
+    <name>
+        <value string="solution1"/>
+    </name>
+    <project>
+        <value string="conv_proj"/>
+    </project>
+    <targetInfo>
+        <TargetInfo value="xcvu095:-ffvc1517:-2-e"/>
+    </targetInfo>
+    <libraryList>
+        <library value="xilinx/virtexu/virtexu" name="DefaultPlatform"/>
+        <library value="xilinx/virtexu/virtexu_fpv7" name="DefaultPlatform"/>
+    </libraryList>
+    <downStreamTool>
+        <DownStreamTool name="vivado"/>
+    </downStreamTool>
+    <clockList>
+        <clock name="default" period="250MHz" default="false"/>
+    </clockList>
+    <config>
+        <config_interface m_axi_addr64="1" m_axi_offset="off" register_io="off"/>
+        <schedule model="conv_layer"/>
+    </config>
+    <ExportDesign askAgain="true" evaluate="false" rtl="verilog" formatName="ip_catalog">
+        <Format formatName="ip_catalog" description="" vendor="" library="" version="1.0" driver_input_dir="" display_name="" taxonomy=""/>
+    </ExportDesign>
+</AutoPilot:solution>
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="fc_layer" xd:componentRef="fc_layer" xd:initiationInterval="x" xd:clockPeriod="4.000000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_CTRL_BUS" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="*(mem)" xd:originalName="mem" xd:direction="inout" xd:interfaceRef="m_axi_mem" xd:busTypeRef="aximm" xd:dataWidth="32" xd:bufferDirection="inout"/>
+  <xd:arg xd:name="input_offset" xd:originalName="input_offset" xd:direction="in" xd:interfaceRef="s_axi_CTRL_BUS" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="output_offset" xd:originalName="output_offset" xd:direction="in" xd:interfaceRef="s_axi_CTRL_BUS" xd:busTypeRef="axilite" xd:offset="0x18" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="batch_size" xd:originalName="batch_size" xd:direction="in" xd:interfaceRef="s_axi_CTRL_BUS" xd:busTypeRef="axilite" xd:offset="0x20" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="num_inputs" xd:originalName="num_inputs" xd:direction="in" xd:interfaceRef="s_axi_CTRL_BUS" xd:busTypeRef="axilite" xd:offset="0x28" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="num_outputs" xd:originalName="num_outputs" xd:direction="in" xd:interfaceRef="s_axi_CTRL_BUS" xd:busTypeRef="axilite" xd:offset="0x30" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="enable_relu" xd:originalName="enable_relu" xd:direction="in" xd:interfaceRef="s_axi_CTRL_BUS" xd:busTypeRef="axilite" xd:offset="0x38" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:latencyEstimates xd:best-case="49" xd:worst-case="24663244825" xd:average-case="3082997775"/>
+  <xd:resourceEstimates xd:LUT="2830" xd:FF="5168" xd:BRAM="2" xd:DSP="9"/>
+</xd:acceleratorMap>

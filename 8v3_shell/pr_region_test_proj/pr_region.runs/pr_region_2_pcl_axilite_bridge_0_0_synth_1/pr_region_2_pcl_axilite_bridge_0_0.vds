@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sat Mar 13 00:35:34 2021
+# Process ID: 26291
+# Current directory: /home/rewingchow/ECE1373_assignment2-2021_2017.2_baseline/8v3_shell/pr_region_test_proj/pr_region.runs/pr_region_2_pcl_axilite_bridge_0_0_synth_1
+# Command line: vivado -log pr_region_2_pcl_axilite_bridge_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source pr_region_2_pcl_axilite_bridge_0_0.tcl
+# Log file: /home/rewingchow/ECE1373_assignment2-2021_2017.2_baseline/8v3_shell/pr_region_test_proj/pr_region.runs/pr_region_2_pcl_axilite_bridge_0_0_synth_1/pr_region_2_pcl_axilite_bridge_0_0.vds
+# Journal file: /home/rewingchow/ECE1373_assignment2-2021_2017.2_baseline/8v3_shell/pr_region_test_proj/pr_region.runs/pr_region_2_pcl_axilite_bridge_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source pr_region_2_pcl_axilite_bridge_0_0.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1239.254 ; gain = 19.000 ; free physical = 58071 ; free virtual = 60699
+INFO: [Synth 8-638] synthesizing module 'pr_region_2_pcl_axilite_bridge_0_0' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_baseline/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ip/pr_region_2_pcl_axilite_bridge_0_0/synth/pr_region_2_pcl_axilite_bridge_0_0.vhd:108]
+INFO: [Synth 8-638] synthesizing module 'axilite_bridge' [/home/rewingchow/ECE1373_assignment2-2021_2017.2_baseline/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/ecd1/hdl/axilite_bridge.vhd:73]
+INFO: [Synth 8-256] done synthesizing module 'axilite_bridge' (1#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_baseline/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ipshared/ecd1/hdl/axilite_bridge.vhd:73]
+INFO: [Synth 8-256] done synthesizing module 'pr_region_2_pcl_axilite_bridge_0_0' (2#1) [/home/rewingchow/ECE1373_assignment2-2021_2017.2_baseline/8v3_shell/pr_region_test_proj/pr_region.srcs/sources_1/bd/pr_region_2/ip/pr_region_2_pcl_axilite_bridge_0_0/synth/pr_region_2_pcl_axilite_bridge_0_0.vhd:108]
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1279.754 ; gain = 59.500 ; free physical = 58032 ; free virtual = 60662
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1279.754 ; gain = 59.500 ; free physical = 58041 ; free virtual = 60670
+INFO: [Device 21-403] Loading part xcvu095-ffvc1517-2-e
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1801.715 ; gain = 0.000 ; free physical = 54441 ; free virtual = 57074
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1801.715 ; gain = 581.461 ; free physical = 53530 ; free virtual = 56163
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1801.715 ; gain = 581.461 ; free physical = 53529 ; free virtual = 56162
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1801.715 ; gain = 581.461 ; free physical = 53527 ; free virtual = 56160
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1801.715 ; gain = 581.461 ; free physical = 53524 ; free virtual = 56157
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1801.715 ; gain = 581.461 ; free physical = 53479 ; free virtual = 56113
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2042.988 ; gain = 822.734 ; free physical = 51378 ; free virtual = 54011
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2042.988 ; gain = 822.734 ; free physical = 51381 ; free virtual = 54014
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2053.004 ; gain = 832.750 ; free physical = 51363 ; free virtual = 53997
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2053.004 ; gain = 832.750 ; free physical = 51142 ; free virtual = 53775
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2053.004 ; gain = 832.750 ; free physical = 51141 ; free virtual = 53774
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2053.004 ; gain = 832.750 ; free physical = 51140 ; free virtual = 53773
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2053.004 ; gain = 832.750 ; free physical = 51140 ; free virtual = 53773
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2053.004 ; gain = 832.750 ; free physical = 51139 ; free virtual = 53772
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2053.004 ; gain = 832.750 ; free physical = 51132 ; free virtual = 53765
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2053.004 ; gain = 832.750 ; free physical = 51137 ; free virtual = 53770
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 2089.004 ; gain = 927.180 ; free physical = 50887 ; free virtual = 53520

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:10 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Sat Mar 13 00:35:11 2021
+# Process ID: 25767
+# Current directory: /home/rewingchow/ECE1373_assignment2-2021_2017.2_baseline
+# Command line: vivado -mode tcl -source 8v3_shell/create_pr2_nn.tcl -tclargs static_routed_v3.dcp
+# Log file: /home/rewingchow/ECE1373_assignment2-2021_2017.2_baseline/vivado.log
+# Journal file: /home/rewingchow/ECE1373_assignment2-2021_2017.2_baseline/vivado.jou
+#-----------------------------------------------------------
+source 8v3_shell/create_pr2_nn.tcl
